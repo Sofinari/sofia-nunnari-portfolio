@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Naris design - Sofia Nunnari</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Naris design portfolio. I am Sofia Nunnari and I am a visual communicator specializing in media interaction design (i.e., everything related to videos, websites and the like, therefore of digital media)">
+    <meta name="keywords"
+        content="Portfolio, Sofia Nunnari, Naris design, visual communication, comunicazione visiva, media interaction">
+    <meta name="web_author" content="Sofia Nunnari">
+    <meta name="copyright" content="Sofia Nunnari">
+    <link href="src/style.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.svg">
+
+
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+        body {
+            color: #000;
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            margin: 2rem auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            /* grid-template-rows: repeat(8, 5vw); */
+            grid-gap: 1.5rem;
+        }
+
+        .gallery__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery__item--1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+            /** Alternative Syntax **/
+            /* grid-column: 1 / span 2;  */
+            /* grid-row: 1 / span 2; */
+        }
+
+        .gallery__item--2 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+            /** Alternative Syntax **/
+            /* grid-column: 3 / span 2;  */
+            /* grid-row: 1 / span 2; */
+        }
+
+        .gallery__item--3 {
+            grid-column-start: 5;
+            grid-column-end: 9;
+            grid-row-start: 1;
+            grid-row-end: 6;
+
+            /** Alternative Syntax **/
+            /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+        }
+
+        .gallery__item--4 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 6;
+
+            /** Alternative Syntax **/
+            /* grid-column: 1 / span 4;  */
+            /* grid-row: 3 / span 3; */
+        }
+
+        .gallery__item--5 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 6;
+            grid-row-end: 9;
+
+            /** Alternative Syntax **/
+            /* grid-column: 1 / span 4; */
+            /* grid-row: 6 / span 3; */
+        }
+        .gallery__item--6 {
+            grid-column-start: 9;
+            grid-column-end: 5;
+            grid-row-start: 6;
+            grid-row-end: 9;
+
+            /** Alternative Syntax **/
+            /* grid-column: 1 / span 4; */
+            /* grid-row: 6 / span 3; */
+        }
+
+        .gallery__item--7 {
+            grid-column-start: 1;
+            grid-column-end: 9;
+            grid-row-start: 9;
+            grid-row-end: 9;
+            /* grid-column: 5 / span 4; */
+            /* grid-row: 6 / span 3; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <h5><a title="homepage" href="Index.html" onclick="showPage('homepage')">Sofia Nunnari</a></h5>
+
+        <div class="menu">
+            <div id="portfolio-text"><a href="Index.html" class="menu-text active" style="float: left; ">Portfolio</a>
+            </div>
+            <div id="contact">
+                <a href="#" class="menu-text" style=" float: right;">Contact</a>
+            </div>
+        </div>
+
+    </nav>
+    <section id="container">
+        <div>
+            <h1 class="title" id="CV">Visual Communication</h1>
+            <div class="desc">
+                <p id="d">Visual communicator<br> specializing in Media Interacton<br> design.</p>
+            </div>
+            <p class="didascalia" id="dove">Based in Ticino<br></p>
+            <p class="didascalia" id="year" style="margin-top:2%">10:21 PM</p>
+            <p class="didascalia" id="clock" style="margin-top:0">10:21 PM</p>
+        </div>
+        <div class="gif"></div>
+    </section>
+    <div id="avviso">
+        <p id="avviso_text">The site is currently being updated, so some content is not viewable or not working</p>
+    </div>
+    <section>
+        <h2 id="about_header">About me</h2>
+        <p class="text" id="about_text">
+            I have always been fascinated by the world of communication and its evolution among the different media
+            available, especially in digital media. <br><br> My next goal is to perform a master's degree in video
+            game
+            creation. <br><br>I finished training as an <b>interactive media designer at CSIA</b>, and then
+            continued my
+            education by attending a <b> Bachelor's degree in visual communication at SUPSI University</b> (in
+            Mendrisio, Switzerland).<br><br> I work as a collaborator at <a style="text-decoration: underline;"
+                href="https://www.pixel-plus.ch/"> pixel-plus</a>.
+
+        </p>
+    </section>
+
+    <section id="pr">
+
+        <h2 id="projects_header" style="margin-bottom: 0%;">
+            Projects
+        </h2>
+
+        <section id="projects_container" style="display: none;"></section>
+    </section>
+    <button class="accordion">
+        <div class="arrow">Creative Coding<img src="src/arrow-down.svg" height="35" width="35"></div>
+    </button>
+    <div class="panel">
+        <div class="griglia">
+            <div class="colonna_2">
+
+                <section class="box-w">
+                    <a href="CC1.html">
+                        <div class="wt">
+                            <p class="titlecategory">Fake Pacman</p>
+                        </div>
+                        <img class="preview" alt="" src="src/IMG/PacMan.png">
+                        <div class="date">2023 01/02</div>
+                        <div class="lm" id="lm">Learn more -></div>
+                    </a>
+                </section>
+
+            </div>
+
+            <div class="colonna_2">
+
+                <section class="box-w">
+                    <a href="CC2.html">
+                        <div class="wt">
+                            <p class="titlecategory">Fuga-dall-incubo</p>
+                        </div>
+                        <img class="preview" alt="" src="src/IMG/FDI.png">
+                        <div class="date">2023 01/02</div>
+                        <div class="lm" id="lm">Learn more -></div>
+                    </a>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <button class="accordion">
+        <div class="arrow">Photography & Video<img src="src/arrow-down.svg" height="35" width="35"></div>
+    </button>
+    <div class="panel">
+        <div class="griglia">
+            <div class="colonna_2">
+                <div id="avviso_aggiornamento">
+                    <p id="avviso_aggiornamento_text">Being updated</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <button class="accordion">
+        <div class="arrow">Editorial & Brand<img src="src/arrow-down.svg" height="35" width="35"></div>
+    </button>
+    <div class="panel">
+        <div class="griglia">
+            <div class="colonna_2">
+                <div id="avviso_aggiornamento">
+                    <p id="avviso_aggiornamento_text">Being updated</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <footer>
+        <ul style="float: left; padding: 0;">
+            <li><b>Social</b></li>
+            <li><a href="https://www.instagram.com/naris_design_?igsh=MTJtdXRuYzdreHA0MA=="
+                    title="Instgram">Instgram</a></li>
+            <li><a title="linkedin" href="#">LinkedIn</a>
+            </li>
+        </ul>
+        <ul style="float: left;">
+            <li id="contact"><b id="contact">Contact</b></li>
+            <li><a title="Email" href="mailto:naris.design@outlook.com">Email</a></li>
+
+        </ul>
+        <ul style="float: left; padding: 0;">
+            <li><b id="language">Language</b></li>
+            <a href="#">
+                <li title="English" onclick="cambiaLingua('english')">English</li>
+            </a>
+            <a href="#">
+                <li title="italiano" onclick="cambiaLingua('italian')">Italiano</li>
+            </a>
+        </ul>
+    </footer>
+
+    <script>
+        // Definisci un oggetto per le traduzioni
+        var translations = {
+            "english": {
+                "CV": "Visual Communication",
+                "dove": "Based in Ticino",
+                "avviso_aggiornamento_text": "Being updated",
+                "d": "Visual communicator<br> specializing in Media Interacton<br> design.",
+                "avviso_text": "The site is currently being updated, so some content is not viewable or not working",
+                "about_header": "About me",
+                "about_text": "I have always been fascinated by the world of communication and its evolution among the different media  available, especially in digital media. <br><br> My next goal is to perform a master's degree in video game creation. <br><br>I finished training as an <b>interactive media designer at CSIA</b>, and then continued my education by attending a <b> Bachelor's degree in visual communication at SUPSI University</b> (in Mendrisio, Switzerland).<br><br>  I work as a collaborator at pixel-plus.",
+                "projects_header": "<a href='Projects.html'>Progetti</a>",
+                "contact": "<b>Contact</b>",
+                "language": "Language",
+                "lm": "Learn more ->"
+            },
+            "italian": {
+                "CV": "Comunicazione visiva",
+                "dove": "Sede in Ticino",
+                "avviso_aggiornamento_text": "In fase di aggiornamento",
+                "d": "Comunicatrice visiva<br> specializzata in Media Interacton<br> design.",
+                "avviso_text": "Attualmente il sito è in fase di aggiornamento, pertanto alcuni contenuti non sono visualizzabili o non funzionanti",
+                "about_header": "Chi sono",
+                "about_text": "Sono sempre stata affascinata dal mondo della comunicazione e dalla sua evoluzione tra i diversi media disponibili, soprattutto quelli digitali. <br><br>Il mio prossimo obiettivo è quello di conseguire un master in creazione di videogiochi. <br><br>Ho terminato la formazione come <b>interactive media designer presso lo CSIA</b>, e poi ho proseguito la mia formazione frequentando <b> un Bachelor in comunicazione visiva presso l'Università SUPSI </b> (a Mendrisio, in Svizzera).<br><br>Lavoro come collaboratrice presso la pixel-plus.",
+                "projects_header": "<a href='Projects.html'>Projects</a>",
+                "contact": "<b>Contatto<b>",
+                "language": "Lingua",
+                "lm": "Maggiori info ->"
+            }
+        };
+
+        // Funzione per cambiare la lingua
+        function cambiaLingua(lingua) {
+            console.log("Lingua cambiata:", lingua);
+            // Ottieni tutti gli elementi che devono essere tradotti
+            var elements = document.querySelectorAll('[id^="CV"], [id^="avviso_aggiornamento_text"], [id^="dove"], [id^="d"], [id^="lm"], [id^="avviso_text"], [id^="about_header"], [id^="about_text"], [id^="projects_header"], [id^="language"], footer ul:not(:first-child) li');
+
+            // Memorizza la posizione corrente dello schermo
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+            // Per ogni elemento, cambia il testo in base alla lingua selezionata
+            elements.forEach(function (element) {
+                var key = element.id;
+                if (translations[lingua][key]) {
+                    // Verifica se il testo deve essere interpretato come HTML
+                    var isHTML = translations[lingua][key].indexOf("<") !== -1;
+                    if (isHTML) {
+                        element.innerHTML = translations[lingua][key];
+                    } else {
+                        element.textContent = translations[lingua][key];
+                    }
+                }
+            });
+
+            // Scorri verso l'alto della pagina
+            window.scrollTo(0, 0);
+        }
+
+        // Funzione per aggiornare l'ora
+        function updateTime() {
+            // Ottieni l'elemento del DOM che mostra l'ora
+            var clock = document.getElementById('clock');
+
+            // Ottieni l'ora corrente
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var meridiem = hours >= 12 ? 'PM' : 'AM';
+
+            // Formatta le ore nel formato 12 ore
+            hours = hours % 12;
+            hours = hours ? hours : 12; // Se le ore sono 0, le impostiamo a 12
+
+            // Aggiungi zero iniziale ai minuti se necessario
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+
+            // Aggiorna il contenuto dell'elemento del clock con l'ora corrente
+            clock.textContent = hours + ':' + minutes + ' ' + meridiem;
+        }
+
+        // Chiama updateTime ogni secondo per aggiornare l'orologio
+        setInterval(updateTime, 1000);
+
+        // Funzione per aggiornare l'anno
+        function updateYear() {
+            // Ottieni l'elemento del DOM che mostra l'anno
+            var yearElement = document.getElementById('year');
+
+            // Ottieni l'anno corrente
+            var now = new Date();
+            var year = now.getFullYear();
+
+            // Aggiorna il contenuto dell'elemento con l'anno corrente
+            yearElement.textContent = year;
+        }
+
+        // Chiama updateYear all'avvio per inizializzare l'anno
+        updateYear();
+    </script>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let acc = document.querySelectorAll('.accordion');
+
+            acc.forEach(function (item) {
+                item.addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    let panel = this.nextElementSibling;
+                    let arrow = this.querySelector('.arrow img');
+
+                    if (panel.classList.contains('active')) {
+                        panel.classList.remove('active');
+                        arrow.style.transform = "rotate(0deg)";
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.classList.add('active');
+                        arrow.style.transform = "rotate(180deg)";
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+
+                        // Aggiungi effetto di scorrimento smooth quando il pannello viene aperto
+                        panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>

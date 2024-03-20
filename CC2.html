@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Naris design - Sofia Nunnari</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Naris design portfolio. This is a teaching project from the creative coding course in the second semester of the second year">
+    <meta name="keywords"
+        content="Fuga dall'incubo, Creative Coding, Portfolio, Sofia Nunnari, Naris design, visual communication, comunicazione visiva, media interaction">
+    <meta name="web_author" content="Sofia Nunnari">
+    <meta name="copyright" content="Sofia Nunnari">
+    <link href="src/style.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.svg">
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h5><a title="homepage" href="Index.html" onclick="showPage('homepage')">Sofia Nunnari</a></h5>
+
+        <div class="menu">
+            <div id="portfolio-text"><a href="Index.html" class="menu-text" style="float: left; ">Portfolio</a></div>
+            <div id="contact">
+                <a href="#" class="menu-text" style=" float: right;">Contact</a>
+            </div>
+        </div>
+
+    </nav>
+    <section id="pr">
+        <h2 id="projects_header" style="margin-bottom: 2%;"><a>Fuga dall'incubo</a></h2>
+        <div class="date">2023 23/06</div>
+    </section>
+    <div>
+        <section class="box-c">
+            <img class="detail" alt="" src="src/IMG/FDI.png">
+            <div>
+                <p class="tl">
+                    <a href="https://github.com/Sofinari/Fuga-dall-incubo" class="link">Link doc project GitHub</a>
+                </p>
+                </p>
+                <p class="tl">
+                    <a href="https://sofinari.github.io/Fuga-dall-incubo/" class="link">Link website</a>
+                </p>
+                <p class="textD" id="Fuga_desc" style="padding: 0;">
+                    In my project, I tackled the topic of designing an interactive interface system based on computer
+                    vision.
+                    <br><br>The goal was to create a multiple-choice mini web video game with a horror/thriller
+                    setting in which users could interact using their hand movements.
+                    <br><br>My goal was to develop a multiple choice mini web video game with a horror/thriller setting.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <ul style="float: left; padding: 0;">
+            <li><b>Social</b></li>
+            <li><a href="https://www.instagram.com/naris_design_?igsh=MTJtdXRuYzdreHA0MA=="
+                    title="Instgram">Instgram</a></li>
+            <li><a title="linkedin"
+                    href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=sofia-nunnari-636b66199">LinkedIn</a>
+            </li>
+        </ul>
+        <ul style="float: left;">
+            <li id="contact"><b id="contact">Contact</b></li>
+            <li><a title="Email" href="mailto:naris.design@outlook.com">Email</a></li>
+
+        </ul>
+        <ul style="float: left; padding: 0;">
+            <li><b id="language">Language</b></li>
+            <li title="English" onclick="cambiaLingua('english')">English</li>
+            <li title="italiano" onclick="cambiaLingua('italian')">Italiano</li>
+        </ul>
+    </footer>
+
+    <script>
+        // Definisci un oggetto per le traduzioni
+        var translations = {
+            "english": {
+                "Fuga_desc": " In my project, I tackled the topic of designing an interactive interface system based on computer vision.<br><br> The goal was to create a multiple-choice mini web video game with a horror/thriller setting in which users could interact using their hand movements.<br><br> My goal was to develop a multiple choice mini web video game with a horror/thriller setting.",
+                "projects_header": "Projects",
+                "contact": "<b>Contact</b>",
+                "language": "Language",
+                "lm": "Learn more ->"
+            },
+            "italian": {
+                "Fuga_desc": " Nel mio progetto, ho affrontato il tema della progettazione di un sistema di interfaccia interattivo basato sulla computer visione computerizzata.<br><br> L'obiettivo era quello di creare un mini videogioco web a scelta multipla con un'ambientazione horror/thriller in cui gli utenti potessero interagire utilizzando i movimenti delle mani.<br><br> Il mio obiettivo era quello di sviluppare un mini videogioco web a scelta multipla mini videogioco web a scelta multipla con un'ambientazione horror/thriller.",
+                "projects_header": "Progetti",
+                "contact": "<b>Contatto<b>",
+                "language": "Lingua",
+                "lm": "Maggiori info ->"
+            }
+        };
+
+        // Funzione per cambiare la lingua
+        function cambiaLingua(lingua) {
+            console.log("Lingua cambiata:", lingua);
+            // Ottieni tutti gli elementi che devono essere tradotti
+            var elements = document.querySelectorAll('[id^="pacman_desc"], [id^="Fuga_desc"], [id^="d"], [id^="lm"], [id^="avviso_text"], [id^="about_header"], [id^="about_text"], [id^="projects_header"], [id^="language"], footer ul:not(:first-child) li');
+
+            // Memorizza la posizione corrente dello schermo
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+            // Per ogni elemento, cambia il testo in base alla lingua selezionata
+            elements.forEach(function (element) {
+                var key = element.id;
+                if (translations[lingua][key]) {
+                    // Verifica se il testo deve essere interpretato come HTML
+                    var isHTML = translations[lingua][key].indexOf("<") !== -1;
+                    if (isHTML) {
+                        element.innerHTML = translations[lingua][key];
+                    } else {
+                        element.textContent = translations[lingua][key];
+                    }
+                }
+            });
+
+            // Scorri verso l'alto della pagina
+            window.scrollTo(0, 0);
+        }
+
+        // Funzione per aggiornare l'ora
+        function updateTime() {
+            // Ottieni l'elemento del DOM che mostra l'ora
+            var clock = document.getElementById('clock');
+
+            // Ottieni l'ora corrente
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var meridiem = hours >= 12 ? 'PM' : 'AM';
+
+            // Formatta le ore nel formato 12 ore
+            hours = hours % 12;
+            hours = hours ? hours : 12; // Se le ore sono 0, le impostiamo a 12
+
+            // Aggiungi zero iniziale ai minuti se necessario
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+
+            // Aggiorna il contenuto dell'elemento del clock con l'ora corrente
+            clock.textContent = hours + ':' + minutes + ' ' + meridiem;
+        }
+
+        // Chiama updateTime ogni secondo per aggiornare l'orologio
+        setInterval(updateTime, 1000);
+
+        // Funzione per aggiornare l'anno
+        function updateYear() {
+            // Ottieni l'elemento del DOM che mostra l'anno
+            var yearElement = document.getElementById('year');
+
+            // Ottieni l'anno corrente
+            var now = new Date();
+            var year = now.getFullYear();
+
+            // Aggiorna il contenuto dell'elemento con l'anno corrente
+            yearElement.textContent = year;
+        }
+
+        // Chiama updateYear all'avvio per inizializzare l'anno
+        updateYear();
+    </script>
+</body>
+
+</html>
