@@ -79,7 +79,7 @@ li {
 
 #avviso>p {
     color: #D06503;
-    font-family: poppins;
+    font-family: Lexend;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -98,7 +98,7 @@ li {
 .titlecategory2 {
     color: #0E0E0E;
     text-align: right;
-    font-family: Poppins;
+    font-family: Lexend;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -126,7 +126,7 @@ li {
 
 #avviso_aggiornamento>p {
     color: #D06503;
-    font-family: poppins;
+    font-family: Lexend;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -176,7 +176,7 @@ li {
 .textD {
     width: auto;
     color: #0E0E0E;
-    font-family: Poppins;
+    font-family: Lexend;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -236,7 +236,7 @@ li {
 
     h5 {
         color: var(--Text, #0E0E0E);
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 12.5pt;
         font-style: normal;
         font-weight: 600;
@@ -248,7 +248,7 @@ li {
 
     .title {
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 37px;
         font-style: normal;
         font-weight: 600;
@@ -272,7 +272,7 @@ li {
 
     .desc {
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -304,7 +304,7 @@ li {
         float: left;
 
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 36px;
         font-style: normal;
         font-weight: 600;
@@ -316,7 +316,7 @@ li {
         width: 100%;
 
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -351,7 +351,7 @@ li {
         width: 103px;
 
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -364,7 +364,7 @@ li {
     .titlecategory {
         color: #0E0E0E;
         text-align: right;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
@@ -424,7 +424,7 @@ li {
     .textD {
         width: auto;
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -452,7 +452,7 @@ li {
 
     .menu-text {
         color: #aaaaaa;
-        font-family: poppins;
+        font-family: Lexend;
         font-size: 10pt;
         text-transform: uppercase;
         float: right;
@@ -486,7 +486,7 @@ li {
 
     h5 {
         color: var(--Text, #0E0E0E);
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 22px;
         font-style: normal;
         font-weight: 600;
@@ -500,7 +500,7 @@ li {
 
     .title {
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 43.8px;
         font-style: normal;
         font-weight: 600;
@@ -530,7 +530,7 @@ li {
 
     .desc {
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -556,7 +556,7 @@ li {
         margin-bottom: 10%;
         float: left;
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 36px;
         font-style: normal;
         font-weight: 600;
@@ -567,7 +567,7 @@ li {
     .text {
         width: 100%;
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -601,7 +601,7 @@ li {
         width: 35%;
 
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -614,7 +614,7 @@ li {
     .titlecategory {
         color: #0E0E0E;
         text-align: right;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
@@ -686,7 +686,7 @@ li {
 
     .menu-text {
         color: #aaaaaa;
-        font-family: poppins;
+        font-family: Lexend;
         font-size: 12pt;
         text-transform: uppercase;
         float: right;
@@ -742,7 +742,7 @@ li {
 
     h5 {
         color: var(--Text, #0E0E0E);
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 25px;
         font-style: normal;
         font-weight: 600;
@@ -754,7 +754,7 @@ li {
 
     .title {
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 80px;
         font-style: normal;
         font-weight: 600;
@@ -781,7 +781,7 @@ li {
 
     .desc {
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
@@ -806,7 +806,7 @@ li {
         /* width: auto; */
         float: left;
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 36pt;
         font-style: normal;
         font-weight: 600;
@@ -818,7 +818,7 @@ li {
     .text {
         width: auto;
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -829,7 +829,7 @@ li {
     .textD {
         width: auto;
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -873,7 +873,7 @@ li {
         width: 103px;
 
         color: #0E0E0E;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -886,7 +886,7 @@ li {
     .titlecategory {
         color: #0E0E0E;
         text-align: right;
-        font-family: Poppins;
+        font-family: Lexend;
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
@@ -959,7 +959,7 @@ li {
 
     .menu-text {
         color: #aaaaaa;
-        font-family: poppins;
+        font-family: Lexend;
         font-size: 12pt;
         text-transform: uppercase;
         float: right;
