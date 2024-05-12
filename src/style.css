@@ -479,7 +479,9 @@ li {
         float: right;
         padding-left: 2%;
     }
-
+    .video {
+        width: 100%; margin: 0;
+    }
 }
 
 
@@ -1001,5 +1003,9 @@ li {
         text-transform: uppercase;
         float: right;
         padding-left: 10%;
+    }
+
+    .video {
+        width: 80%; margin: 0 10%;
     }
 }
