@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 *,
 *:before,
 *:after {
@@ -5,6 +7,17 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none
+}
+
+.grid--main {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    visibility: visible;
+    margin: 0 calc(-10px / 2);
+    border-bottom: 8px solid transparent;
+    border-left: calc(8px / 2) solid transparent;
+    border-right: calc(8px / 2) solid transparent;
 }
 
 .left {
@@ -38,6 +51,7 @@ nav a:hover {
     color: #0E0E0E;
     transition: color 0.2s ease;
 }
+
 nav a.active {
     color: #0E0E0E;
 }
@@ -79,7 +93,7 @@ li {
 
 #avviso>p {
     color: #D06503;
-    font-family: Lexend;
+    font-family: ' ' Lexend'';
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -98,7 +112,7 @@ li {
 .titlecategory2 {
     color: #0E0E0E;
     text-align: right;
-    font-family: Lexend;
+    font-family: ' ' Lexend'';
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -108,7 +122,7 @@ li {
 }
 
 .link {
-    font-family: 'Space Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 16px;
     margin: 5% 0;
     color: #0051ff;
@@ -126,7 +140,7 @@ li {
 
 #avviso_aggiornamento>p {
     color: #D06503;
-    font-family: Lexend;
+    font-family: ' ' Lexend'';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -176,7 +190,7 @@ li {
 .textD {
     width: auto;
     color: #0E0E0E;
-    font-family: Lexend;
+    font-family: ' ' Lexend'';
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -236,7 +250,7 @@ li {
 
     h5 {
         color: var(--Text, #0E0E0E);
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 12.5pt;
         font-style: normal;
         font-weight: 600;
@@ -248,7 +262,7 @@ li {
 
     .title {
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: ' ' Lexend'';
         font-size: 37px;
         font-style: normal;
         font-weight: 600;
@@ -262,7 +276,7 @@ li {
         margin-top: 10%;
 
         color: #0E0E0E;
-        font-family: 'Space Mono', monospace;
+        font-family: 'JetBrains Mono', monospace;
         font-size: 14px;
         font-style: normal;
         /* font-weight: 700; */
@@ -272,7 +286,7 @@ li {
 
     .desc {
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: ' ' Lexend'';
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -304,7 +318,7 @@ li {
         float: left;
 
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 36px;
         font-style: normal;
         font-weight: 600;
@@ -316,7 +330,7 @@ li {
         width: 100%;
 
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -351,7 +365,7 @@ li {
         width: 103px;
 
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -364,7 +378,7 @@ li {
     .titlecategory {
         color: #0E0E0E;
         text-align: right;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
@@ -384,7 +398,8 @@ li {
 
     .date {
         color: #0E0E0E;
-        font-family: 'Space Mono', monospace;
+        font-family: "JetBrains Mono", monospace;
+        font-optical-sizing: auto;
         ;
         font-size: 14px;
         font-style: normal;
@@ -397,7 +412,7 @@ li {
     .lm {
         color: #0E0E0E;
         text-align: right;
-        font-family: 'Space Mono', monospace;
+        font-family: 'JetBrains Mono', monospace;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -411,7 +426,7 @@ li {
         width: -webkit-fill-available;
         height: 102px;
         border-top: #0E0E0E solid 1px;
-        font-family: 'Space Mono', monospace;
+        font-family: 'JetBrains Mono', monospace;
         font-size: 14px;
         margin: 5% 0 5% 0;
     }
@@ -424,7 +439,7 @@ li {
     .textD {
         width: auto;
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -437,6 +452,12 @@ li {
 
     .detail {
         width: 100%;
+    }
+    .imageowerview {
+        width: 100%;
+        height: auto;
+        background: #BFBFBF;
+        margin-bottom: 10px;
     }
 
     .tl {
@@ -452,8 +473,8 @@ li {
 
     .menu-text {
         color: #aaaaaa;
-        font-family: Lexend;
-        font-size: 10pt;
+        font-family: 'Lexend';
+        font-size: 9pt;
         text-transform: uppercase;
         float: right;
         padding-left: 2%;
@@ -486,7 +507,7 @@ li {
 
     h5 {
         color: var(--Text, #0E0E0E);
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 22px;
         font-style: normal;
         font-weight: 600;
@@ -500,7 +521,7 @@ li {
 
     .title {
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 43.8px;
         font-style: normal;
         font-weight: 600;
@@ -516,7 +537,7 @@ li {
         margin-top: 10%;
 
         color: #0E0E0E;
-        font-family: 'Space Mono', monospace;
+        font-family: 'JetBrains Mono', monospace;
         font-size: 14px;
         font-style: normal;
         /* font-weight: 700; */
@@ -530,7 +551,7 @@ li {
 
     .desc {
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -538,6 +559,13 @@ li {
         float: right;
         margin-top: 10%;
         /* 114.286% */
+    }
+
+    .imageowerview {
+        width: 100%;
+        height: auto;
+        background: #BFBFBF;
+        margin-bottom: 10px;
     }
 
     .gif {
@@ -556,7 +584,7 @@ li {
         margin-bottom: 10%;
         float: left;
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 36px;
         font-style: normal;
         font-weight: 600;
@@ -567,7 +595,7 @@ li {
     .text {
         width: 100%;
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -601,7 +629,7 @@ li {
         width: 35%;
 
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -614,7 +642,7 @@ li {
     .titlecategory {
         color: #0E0E0E;
         text-align: right;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
@@ -634,7 +662,7 @@ li {
 
     .date {
         color: #0E0E0E;
-        font-family: 'Space Mono', monospace;
+        font-family: 'JetBrains Mono', monospace;
         ;
         font-size: 14px;
         font-style: normal;
@@ -647,7 +675,7 @@ li {
     .lm {
         color: #0E0E0E;
         text-align: right;
-        font-family: 'Space Mono', monospace;
+        font-family: 'JetBrains Mono', monospace;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -673,10 +701,11 @@ li {
         width: 100%;
         height: 102px;
         border-top: #0E0E0E solid 1px;
-        font-family: 'Space Mono', monospace;
+        font-family: 'JetBrains Mono', monospace;
         font-size: 14px;
         margin: 5% 0 5% 0;
     }
+
     .menu {
         font-weight: 600;
         width: 55%;
@@ -686,8 +715,8 @@ li {
 
     .menu-text {
         color: #aaaaaa;
-        font-family: Lexend;
-        font-size: 12pt;
+        font-family: 'Lexend';
+        font-size: 11pt;
         text-transform: uppercase;
         float: right;
         padding-left: 10%;
@@ -742,7 +771,7 @@ li {
 
     h5 {
         color: var(--Text, #0E0E0E);
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 25px;
         font-style: normal;
         font-weight: 600;
@@ -754,7 +783,7 @@ li {
 
     .title {
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 80px;
         font-style: normal;
         font-weight: 600;
@@ -772,7 +801,7 @@ li {
         width: 20%;
         margin-top: 10%;
         color: #0E0E0E;
-        font-family: 'Space Mono', monospace;
+        font-family: 'JetBrains Mono', monospace;
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
@@ -781,7 +810,7 @@ li {
 
     .desc {
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
@@ -806,7 +835,7 @@ li {
         /* width: auto; */
         float: left;
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 36pt;
         font-style: normal;
         font-weight: 600;
@@ -818,7 +847,7 @@ li {
     .text {
         width: auto;
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -829,7 +858,7 @@ li {
     .textD {
         width: auto;
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -873,7 +902,7 @@ li {
         width: 103px;
 
         color: #0E0E0E;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -886,7 +915,7 @@ li {
     .titlecategory {
         color: #0E0E0E;
         text-align: right;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
@@ -910,9 +939,17 @@ li {
         margin-right: 5%;
     }
 
+    .imageowerview {
+        width: 50%;
+        height: auto;
+        background: transparent;
+        margin: 0;
+        padding: 10px 10px;
+    }
+
     .date {
         color: #0E0E0E;
-        font-family: 'Space Mono', monospace;
+        font-family: 'JetBrains Mono', monospace;
         ;
         font-size: 14px;
         font-style: normal;
@@ -925,7 +962,7 @@ li {
     .lm {
         color: #0E0E0E;
         text-align: right;
-        font-family: 'Space Mono', monospace;
+        font-family: 'JetBrains Mono', monospace;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -939,7 +976,7 @@ li {
         width: -webkit-fill-available;
         height: 102px;
         border-top: #0E0E0E solid 1px;
-        font-family: 'Space Mono', monospace;
+        font-family: 'JetBrains Mono', monospace;
         font-size: 14px;
         margin: 5% 0 5% 0;
     }
@@ -953,13 +990,13 @@ li {
 
     .menu {
         font-weight: 600;
-        width: 15%;
+        width: 25%;
         float: right;
     }
 
     .menu-text {
         color: #aaaaaa;
-        font-family: Lexend;
+        font-family: 'Lexend';
         font-size: 12pt;
         text-transform: uppercase;
         float: right;

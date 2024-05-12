@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Naris design - Sofia Nunnari</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Naris design portfolio. This is a teaching project from the creative coding course in the second semester of the second year">
+    <meta name="keywords"
+        content="Fake PacMan, PacMan, Portfolio, Sofia Nunnari, Naris design, visual communication, comunicazione visiva, media interaction">
+    <meta name="web_author" content="Sofia Nunnari">
+    <meta name="copyright" content="Sofia Nunnari">
+    <link href="src/style.css" rel="stylesheet" />
+    <!-- <link
+        href="https://fonts.googleapis.com/css?family=Lexend:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
+        rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.svg">
+</head>
+
+<body>
+    <nav>
+        <h5><a title="homepage" href="index.html" onclick="showPage('homepage')">Sofia Nunnari</a></h5>
+
+        <div class="menu">
+            <div id="portfolio-text"><a href="index.html" class="menu-text" style="float: left; ">Portfolio</a></div>
+            <div id="contact">
+                <a href="#" class="menu-text" style=" float: right;">Contact</a>
+            </div>
+        </div>
+
+    </nav>
+    <section id="pr">
+        <h2 id="projects_header" style="margin-bottom: 2%;"><a>EduPet Aquarium Manual</a></h2>
+        <div class="date">2023 29/12</div>
+        <div class="date" id="didattico" style="float: right; color: gray; font-style: italic;">
+            This project is a SUPSI didactic work from the LAB IV course.</div>
+    </section>
+    <div>
+        <section class="box-c">
+            <img class="detail" alt="" src="src/IMG/Editoria/EduPet/Brand-cover.png">
+            <div>
+                <p class="textD" id="description" style="padding: 0;">This project initially conceived for a single aquarium manual turned into a real journey for the creation of the EduPet brand.
+                   
+                    <br><br> EduPet was born out of the need to educate prospective new pet owners in their care taking proper responsibility that many times eludes aclittle-informed pet owners about the new furry, scaly, feathered friend to bring home.
+                   
+                    <br><br>The manual is an A5 size, specially printed with recycled paper, the software used for this project is Adobe InDesign. The photos of the fish featured in the preview were taken by me in my aquarium.
+                </p>
+            </div>
+        </section>
+
+    </div>
+    <section class="grid--main">
+        <img class="imageowerview" alt="" src="src/IMG/Editoria/EduPet/01-Mockup.png">
+        <img class="imageowerview" alt="" src="src/IMG/Editoria/EduPet/02-Mockup.png">
+        <img class="imageowerview" alt="" src="src/IMG/Editoria/EduPet/03-Mockup.png">
+        <img class="imageowerview" alt="" src="src/IMG/Editoria/EduPet/04-Mockup.png">
+    </section>
+
+    <footer>
+        <ul style="float: left; padding: 0;">
+            <li><b>Social</b></li>
+            <li><a href="https://www.instagram.com/naris_design_?igsh=MTJtdXRuYzdreHA0MA=="
+                    title="Instgram">Instgram</a></li>
+            <li><a title="linkedin"
+                    href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=sofia-nunnari-636b66199">LinkedIn</a>
+            </li>
+        </ul>
+        <ul style="float: left;">
+            <li id="contact"><b id="contact">Contact</b></li>
+            <li><a title="Email" href="mailto:naris.design@outlook.com">Email</a></li>
+
+        </ul>
+        <ul style="float: left; padding: 0;">
+            <li><b id="language">Language</b></li>
+            <li title="English" onclick="cambiaLingua('english')">English</li>
+            <li title="italiano" onclick="cambiaLingua('italian')">Italiano</li>
+        </ul>
+    </footer>
+
+    <script>
+        // Definisci un oggetto per le traduzioni
+        var translations = {
+            "english": {
+                "description": "This project initially conceived for a single aquarium manual turned into a real journey for the creation of the EduPet brand.<br><br> EduPet was born out of the need to educate prospective new pet owners in their care taking proper responsibility that many times eludes aclittle-informed pet owners about the new furry, scaly, feathered friend to bring home. <br><br>The manual is an A5 size, specially printed with recycled paper, the software used for this project is Adobe InDesign. The photos of the fish featured in the preview were taken by me in my aquarium.",
+                "projects_header": "Projects",
+                "contact": "<b>Contact</b>",
+                "language": "Language",
+                "lm": "Learn more ->",
+                "didattico": "This project is a SUPSI didactic work from the LAB IV course."
+            },
+            "italian": {
+                "description": "Questo progetto inizialmente pensato per un singolo manuale per acquari si è trasformato in un vero e proprio viaggio per la creazione del brand EduPet.<br><br>EduPet nasce dal bisogno di formare i futuri nuovi proprietari di animali alla loro cura presa di responsabilità corretta che molte volte sfugge ad acluni propietari poco informati sul nuovo amico peloso, squamoso, piumato da portare a casa.<br><br>Il manuale è un formato A5, stampato appositamente con carta riciclata, il software utilizzato per questo progetto è Adobe InDesign. Le foto dei pesci presenti in anteprima sono state scattate da me nel mio acquario.",
+                "projects_header": "Progetti",
+                "contact": "<b>Contatto<b>",
+                "language": "Lingua",
+                "lm": "Maggiori info ->",
+                "didattico": "Questo progetto è un lavoro didattico SUPSI del corso LAB IV"
+            }
+        };
+
+        // Funzione per cambiare la lingua
+        function cambiaLingua(lingua) {
+            console.log("Lingua cambiata:", lingua);
+            // Ottieni tutti gli elementi che devono essere tradotti
+            var elements = document.querySelectorAll('[id^="description"],[id^="didattico"], [id^="d"], [id^="lm"], [id^="avviso_text"], [id^="about_header"], [id^="about_text"], [id^="projects_header"], [id^="language"], footer ul:not(:first-child) li');
+
+            // Memorizza la posizione corrente dello schermo
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+            // Per ogni elemento, cambia il testo in base alla lingua selezionata
+            elements.forEach(function (element) {
+                var key = element.id;
+                if (translations[lingua][key]) {
+                    // Verifica se il testo deve essere interpretato come HTML
+                    var isHTML = translations[lingua][key].indexOf("<") !== -1;
+                    if (isHTML) {
+                        element.innerHTML = translations[lingua][key];
+                    } else {
+                        element.textContent = translations[lingua][key];
+                    }
+                }
+            });
+
+            // Scorri verso l'alto della pagina
+            window.scrollTo(0, 0);
+        }
+
+        // Funzione per aggiornare l'ora
+        function updateTime() {
+            // Ottieni l'elemento del DOM che mostra l'ora
+            var clock = document.getElementById('clock');
+
+            // Ottieni l'ora corrente
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var meridiem = hours >= 12 ? 'PM' : 'AM';
+
+            // Formatta le ore nel formato 12 ore
+            hours = hours % 12;
+            hours = hours ? hours : 12; // Se le ore sono 0, le impostiamo a 12
+
+            // Aggiungi zero iniziale ai minuti se necessario
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+
+            // Aggiorna il contenuto dell'elemento del clock con l'ora corrente
+            clock.textContent = hours + ':' + minutes + ' ' + meridiem;
+        }
+
+        // Chiama updateTime ogni secondo per aggiornare l'orologio
+        setInterval(updateTime, 1000);
+
+        // Funzione per aggiornare l'anno
+        function updateYear() {
+            // Ottieni l'elemento del DOM che mostra l'anno
+            var yearElement = document.getElementById('year');
+
+            // Ottieni l'anno corrente
+            var now = new Date();
+            var year = now.getFullYear();
+
+            // Aggiorna il contenuto dell'elemento con l'anno corrente
+            yearElement.textContent = year;
+        }
+
+        // Chiama updateYear all'avvio per inizializzare l'anno
+        updateYear();
+    </script>
+</body>
+
+</html>
