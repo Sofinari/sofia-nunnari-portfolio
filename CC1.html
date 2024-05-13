@@ -42,6 +42,8 @@
     <section id="pr">
         <h2 id="projects_header" style="margin-bottom: 2%;"><a>Fake Pacman</a></h2>
         <div class="date">2023 23/06</div>
+        <div class="date" id="didattico" style="float: right; color: gray; font-style: italic;">
+            This project needs access to the camera to function.</div>
     </section>
     <div>
         <section class="box-c">
@@ -99,6 +101,7 @@
                 "projects_header": "Projects",
                 "contact": "<b>Contact</b>",
                 "language": "Language",
+                "didattico": "This project needs access to the camera to function.",
                 "lm": "Learn more ->"
             },
             "italian": {
@@ -107,6 +110,7 @@
                 "projects_header": "Progetti",
                 "contact": "<b>Contatto<b>",
                 "language": "Lingua",
+                "didattico": "Per funzionare, questo progetto ha bisogno di accedere alla telecamera.",
                 "lm": "Maggiori info ->"
             }
         };
@@ -115,7 +119,7 @@
         function cambiaLingua(lingua) {
             console.log("Lingua cambiata:", lingua);
             // Ottieni tutti gli elementi che devono essere tradotti
-            var elements = document.querySelectorAll('[id^="pacman_desc"], [id^="Fuga_desc"], [id^="d"], [id^="lm"], [id^="avviso_text"], [id^="about_header"], [id^="about_text"], [id^="projects_header"], [id^="language"], footer ul:not(:first-child) li');
+            var elements = document.querySelectorAll('[id^="pacman_desc"], [id^="didattico"], [id^="Fuga_desc"], [id^="d"], [id^="lm"], [id^="avviso_text"], [id^="about_header"], [id^="about_text"], [id^="projects_header"], [id^="language"], footer ul:not(:first-child) li');
 
             // Memorizza la posizione corrente dello schermo
             var currentScroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
