@@ -14,9 +14,6 @@
     <meta name="web_author" content="Sofia Nunnari">
     <meta name="copyright" content="Sofia Nunnari">
     <link href="src/style.css" rel="stylesheet" />
-    <!-- <link
-        href="https://fonts.googleapis.com/css?family=Lexend:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
-        rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,48 +31,40 @@
         <div class="menu">
             <div id="portfolio-text"><a href="index.html" class="menu-text" style="float: left; ">Portfolio</a></div>
             <div id="contact">
-                <a href="contact.html" class="menu-text" style=" float: right;">Contact</a>
+                <a href="contact.html" class="menu-text active" style=" float: right;">Contact</a>
             </div>
         </div>
 
     </nav>
     <section id="pr">
-        <h2 id="projects_header" style="margin-bottom: 2%;"><a>Fake Pacman</a></h2>
-        <div class="date">2023 23/06</div>
+        <h2 id="projects_header" style="margin-bottom: 2%;">Contact</h2>
+        <div>
+            <p class="didascalia" id="year" style="margin-top:2%">10:21 PM</p>
+            <p class="didascalia" id="clock" style="margin-top:0">10:21 PM</p>
+        </div>
     </section>
     <div>
         <section class="box-c">
-            <img class="detail" alt="" src="src/IMG/PacMan.png">
             <div>
-                <p class="tl">
-                    <a href="https://github.com/sofinari/fake_pacman/" class="link">Link doc project GitHub</a>
-                </p>
-                </p>
-                <p class="tl">
-                    <a href="https://sofinari.github.io/fake_pacman/" class="link">Link website</a>
-                </p>
-                <p class="textD" id="pacman_desc" style="padding: 0;">The project addresses the interface system for
-                    generating augmented reality puppets applied on the hand, with the goal of creating a puppet that
-                    extends over the entire hand or part of it, graphically representing a character with its own
-                    character.
-                    <br><br> With the computer camera capturing and recognizing the hands for tracking and drawing the
-                    puppet, along with "Media Pipe" (and p5js) technology to create interactive digital puppets.
-                    <br><br> The developed interface system is designed to be intuitive and easy to use even for
-                    inexperienced users, offering a new interactive experience.My project, called Fake-Pacman, is an
-                    homage to the original game. However, unlike the original Pacman, the character is not found in a maze, which justifies the attribute "fake".
-                </p>
+                <p class="textD" id="description" style="padding: 0; width: 100%; margin-bottom: 5%;">To contact me you can send me an
+                    email or message me on LinkedIn</p>
             </div>
+            <p class="tl">
+                <a href="mailto:naris.design@outlook.com" class="link">E-mail</a>
+            </p>
+            <p class="tl">
+                <a href="mailto:naris.design@outlook.com" class="link">LinkedIn</a>
+            </p>
         </section>
 
     </div>
-
     <footer>
         <ul style="float: left; padding: 0;">
             <li><b>Social</b></li>
             <li><a href="https://www.instagram.com/naris_design_?igsh=MTJtdXRuYzdreHA0MA=="
                     title="Instgram">Instgram</a></li>
             <li><a title="linkedin"
-                    href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=sofia-nunnari-636b66199">LinkedIn</a>
+                    href="www.linkedin.com/in/sofia-nunnari-636b66199">LinkedIn</a>
             </li>
         </ul>
         <ul style="float: left;">
@@ -94,20 +83,12 @@
         // Definisci un oggetto per le traduzioni
         var translations = {
             "english": {
-                "pacman_desc": "The project addresses the interface system for generating augmented reality puppets applied on the hand, with the goal of creating a puppet that extends over the entire hand or part of it, graphically representing a character with its own character.<br><br> With the computer camera capturing and recognizing the hands for tracking and drawing the puppet, along with 'Media Pipe' (and p5js) technology to create interactive digital puppets.<br><br> The developed interface system is designed to be intuitive and easy to use even for inexperienced users, offering a new interactive experience.My project, called Fake-Pacman, is an homage to the original game. Tuttavia, a differenza del Pacman originale, il personaggio non si trova in un labirinto, il che giustifica l’attributo “fake”.",
-                "Fuga_desc": "In my project, I tackled the topic of designing an interactive interface system based on computer vision. The goal was to create a multiple-choice mini web video game with a horror/thriller setting in which users could interact using their hand movements. My goal was to develop a multiple choice mini web video game with a horror/thriller setting.",
-                "projects_header": "Projects",
-                "contact": "<b>Contact</b>",
-                "language": "Language",
-                "lm": "Learn more ->"
+                "description": "To contact me you can send me an email or message me on LinkedIn",
+                "projects_header": "Contact"
             },
             "italian": {
-                "pacman_desc": "Il progetto affronta il sistema di interfaccia per la generazione di marionette in realtà aumentata applicate sulla mano, con l’obiettivo di creare una marionetta che si estenda sull’intera mano o in parte, rappresentando graficamente un personaggio con un proprio carattere.<br><br> Con la fotocamera del computer che cattura e riconosce le mani per il tracciamento e il disegno della marionetta, insieme alla tecnologia “Media Pipe” (e p5js) per creare marionette digitali interattive.<br><br> Il sistema di interfaccia sviluppato è stato progettato per essere intuitivo e facile da usare anche per gli utenti non esperti, offrendo una nuova esperienza interattiva.Il mio progetto, chiamato Fake-Pacman, è un omaggio al gioco originale. Tuttavia, a differenza del Pacman originale, il personaggio non si trova in un labirinto, il che giustifica l’attributo “fake”.",
-                "Fuga_desc": "Nel mio progetto, ho affrontato il tema della progettazione di un sistema di interfaccia interattiva basato sulla computer vision. L'obiettivo era creare un mini videogioco web a scelte multiple con un'ambientazione horror/thriller, in cui gli utenti potessero interagire utilizzando i movimenti delle proprie mani. Il mio obiettivo era sviluppare un mini videogioco web a scelte multiple con un'atmosfera horror/thriller.",
-                "projects_header": "Progetti",
-                "contact": "<b>Contatto<b>",
-                "language": "Lingua",
-                "lm": "Maggiori info ->"
+                "description": "Per contattarmi puoi mandarmi una email o scrivermi un messaggio su LinkedIn",
+                "projects_header": "Contatti"
             }
         };
 
@@ -115,7 +96,7 @@
         function cambiaLingua(lingua) {
             console.log("Lingua cambiata:", lingua);
             // Ottieni tutti gli elementi che devono essere tradotti
-            var elements = document.querySelectorAll('[id^="pacman_desc"], [id^="Fuga_desc"], [id^="d"], [id^="lm"], [id^="avviso_text"], [id^="about_header"], [id^="about_text"], [id^="projects_header"], [id^="language"], footer ul:not(:first-child) li');
+            var elements = document.querySelectorAll('[id^="description"],[id^="projects_header"], [id^="language"], footer ul:not(:first-child) li');
 
             // Memorizza la posizione corrente dello schermo
             var currentScroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
