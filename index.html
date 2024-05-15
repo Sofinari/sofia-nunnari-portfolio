@@ -174,7 +174,7 @@
             creation. <br><br>I finished training as an <b>interactive media designer at CSIA</b>, and then
             continued my
             education by attending a <b> Bachelor's degree in visual communication at SUPSI University</b> (in
-            Mendrisio, Switzerland).<br><br> I worked as a collaborator at <a style="text-decoration: underline;"
+            Mendrisio, Switzerland).<br><br> I worked as a collaborator at <a style="color: #0051ff;"
                 href="https://www.pixel-plus.ch/"> pixel-plus</a>.
 
         </p>
@@ -282,10 +282,14 @@
 
     <section class="copyright">
         <b>
-        <p style="margin: 0; float: left;"> Copyright &copy &nbsp</p> 
-        <p id="year2" style="margin: 0; float: left;"> year </p> <br>
-        <p style="margin: 0; float: left;">Sofia Nunnari – SUPSI DACD. All rights reserved.</p></b><br>
-        <p id="copyright" style="font-size: 10pt;"><br><br>The contents of this site are protected by copyright laws and are the exclusive property of Sofia Nunnari and&#47;or SUPSI. <br>Any reproduction, distribution, modification or use of the contents without prior written authorisation is prohibited. <br>For usage requests or other information, please contact me.</p>
+            <p style="margin: 0; float: left;"> Copyright &copy &nbsp</p>
+            <p id="year2" style="margin: 0; float: left;"> year </p> <br>
+            <p style="margin: 0; float: left;">Sofia Nunnari – SUPSI DACD. All rights reserved.</p>
+        </b><br>
+        <p id="copyright" style="font-size: 10pt;"><br><br>The contents of this site are protected by copyright laws and
+            are the exclusive property of Sofia Nunnari and&#47;or SUPSI. <br>Any reproduction, distribution,
+            modification or use of the contents without prior written authorisation is prohibited. <br>For usage
+            requests or other information, please contact me.</p>
     </section>
     <footer>
         <ul style="float: left; padding: 0;">
@@ -373,62 +377,65 @@
 
     </script>
 
-<script>
-    // Funzione per aggiornare l'ora
-    function updateTime() {
-        // Ottieni l'elemento del DOM che mostra l'ora
-        var clock = document.getElementById('clock');
-    
-        // Ottieni l'ora corrente
-        var now = new Date();
-        var hours = now.getHours();
-        var minutes = now.getMinutes();
-        var meridiem = hours >= 12 ? 'PM' : 'AM';
-    
-        // Formatta le ore nel formato 12 ore
-        hours = hours % 12;
-        hours = hours ? hours : 12; // Se le ore sono 0, le impostiamo a 12
-    
-        // Aggiungi zero iniziale ai minuti se necessario
-        minutes = minutes < 10 ? '0' + minutes : minutes;
-    
-        // Aggiorna il contenuto dell'elemento del clock con l'ora corrente
-        clock.textContent = hours + ':' + minutes + ' ' + meridiem;
-    }
-    
-    // Chiama updateTime ogni secondo per aggiornare l'orologio
-    setInterval(updateTime, 1000);
-    
-    // Funzione per aggiornare l'anno
-    function updateYear() {
-        // Ottieni l'elemento del DOM che mostra l'anno
-        var yearElement = document.getElementById('year');
-    
-        // Ottieni l'anno corrente
-        var now = new Date();
-        var year = now.getFullYear();
-    
-        // Aggiorna il contenuto dell'elemento con l'anno corrente
-        yearElement.textContent = year;
-    }
-    
-    function updateYear2() {
-        // Ottieni l'elemento del DOM che mostra l'anno
-        var year2Element = document.getElementById('year2');
-    
-        // Ottieni l'anno corrente
-        var now = new Date();
-        var year = now.getFullYear();
-    
-        // Aggiorna il contenuto dell'elemento con l'anno corrente
-        year2Element.textContent = year;
-    }
-    
-    // Chiama updateYear all'avvio per inizializzare l'anno
-    updateYear();
-    updateYear2();
-</script>
-    
+    <script>
+        // Funzione per aggiornare l'ora
+        function updateTime() {
+            // Ottieni l'elemento del DOM che mostra l'ora
+            var clock = document.getElementById('clock');
+
+            // Ottieni l'ora corrente
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            // Formatta le ore e i minuti nel formato 24 ore
+            var formattedHours = hours < 10 ? '0' + hours : hours;
+            var formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+
+            // Determina se i due punti devono essere visibili o no
+            var separator = seconds % 2 === 0 ? ':' : ' ';
+
+            // Aggiorna il contenuto dell'elemento del clock con l'ora corrente
+            clock.textContent = formattedHours + separator + formattedMinutes;
+        }
+
+        // Chiama updateTime ogni secondo per aggiornare l'orologio
+        setInterval(updateTime, 1000);
+
+        // Inizializza l'orologio all'avvio
+        updateTime();
+
+        // Funzione per aggiornare l'anno
+        function updateYear() {
+            // Ottieni l'elemento del DOM che mostra l'anno
+            var yearElement = document.getElementById('year');
+
+            // Ottieni l'anno corrente
+            var now = new Date();
+            var year = now.getFullYear();
+
+            // Aggiorna il contenuto dell'elemento con l'anno corrente
+            yearElement.textContent = year;
+        }
+
+        function updateYear2() {
+            // Ottieni l'elemento del DOM che mostra l'anno
+            var year2Element = document.getElementById('year2');
+
+            // Ottieni l'anno corrente
+            var now = new Date();
+            var year = now.getFullYear();
+
+            // Aggiorna il contenuto dell'elemento con l'anno corrente
+            year2Element.textContent = year;
+        }
+
+        // Chiama updateYear all'avvio per inizializzare l'anno
+        updateYear();
+        updateYear2();
+    </script>
+
     <script>
 
         document.addEventListener("DOMContentLoaded", function () {

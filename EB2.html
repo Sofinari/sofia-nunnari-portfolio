@@ -14,9 +14,6 @@
     <meta name="web_author" content="Sofia Nunnari">
     <meta name="copyright" content="Sofia Nunnari">
     <link href="src/style.css" rel="stylesheet" />
-    <!-- <link
-        href="https://fonts.googleapis.com/css?family=Lexend:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
-        rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,7 +46,12 @@
         <section class="box-c">
             <img class="detail" alt="" src="src/IMG/Editoria/Francobolli/Cover.png">
             <div>
-                <p class="textD" id="description" style="padding: 0;">This project was inspired by the new 'Swiss Crypto Stamp' mail collection. <br><br> The concept of these artefacts was to create crypto-stamps in collaboration with the post office as artist (the collaboration is not real, it is only for the idea of the project!). <br><br>Moreover, the collection was designed for a whole year as it was divided into four parts (seasonal so spring, summer, etc.), and each season there was a collaboration with an association (one different from the other) for the defence and protection of the environment/animals. 
+                <p class="textD" id="description" style="padding: 0;">This project was inspired by the new <a href="https://crypto-stamp.post.ch/it" style="color: #0051ff;">“Swiss Crypto Stamp”</a> mail collection. <br><br> The concept of these artefacts was to create crypto-stamps in
+                    collaboration with the post office as artist (the collaboration is not real, it is only for the idea
+                    of the project!). <br><br>Moreover, the collection was designed for a whole year as it was divided
+                    into four parts (seasonal so spring, summer, etc.), and each season there was a collaboration with
+                    an association (one different from the other) for the defence and protection of the
+                    environment/animals.
                 </p>
             </div>
         </section>
@@ -63,10 +65,14 @@
     </section>
     <section class="copyright">
         <b>
-        <p style="margin: 0; float: left;"> Copyright &copy &nbsp</p> 
-        <p id="year" style="margin: 0; float: left;"> year </p> <br>
-        <p style="margin: 0; float: left;">Sofia Nunnari – SUPSI DACD. All rights reserved.</p></b><br>
-        <p id="copyright" style="font-size: 10pt;"><br><br>The contents of this site are protected by copyright laws and are the exclusive property of Sofia Nunnari and&#47;or SUPSI. <br>Any reproduction, distribution, modification or use of the contents without prior written authorisation is prohibited. <br>For usage requests or other information, please contact me.</p>
+            <p style="margin: 0; float: left;"> Copyright &copy &nbsp</p>
+            <p id="year" style="margin: 0; float: left;"> year </p> <br>
+            <p style="margin: 0; float: left;">Sofia Nunnari – SUPSI DACD. All rights reserved.</p>
+        </b><br>
+        <p id="copyright" style="font-size: 10pt;"><br><br>The contents of this site are protected by copyright laws and
+            are the exclusive property of Sofia Nunnari and&#47;or SUPSI. <br>Any reproduction, distribution,
+            modification or use of the contents without prior written authorisation is prohibited. <br>For usage
+            requests or other information, please contact me.</p>
     </section>
     <footer>
         <ul style="float: left; padding: 0;">
@@ -93,7 +99,7 @@
         var translations = {
             "english": {
                 "description": "This project was inspired by the new 'Swiss Crypto Stamp' mail collection. <br><br> The concept of these artefacts was to create crypto-stamps in collaboration with the post office as artist (the collaboration is not real, it is only for the idea of the project!). <br><br>Moreover, the collection was designed for a whole year as it was divided into four parts (seasonal so spring, summer, etc.), and each season there was a collaboration with an association (one different from the other) for the defence and protection of the environment/animals.",
-                "projects_header": "Projects",
+                "projects_header": "My crypto postage stamps collection",
                 "contact": "<b>Contact</b>",
                 "language": "Language",
                 "lm": "Learn more ->",
@@ -101,8 +107,8 @@
                 "didattico": "This project is a SUPSI didactic work from the LAB IV course."
             },
             "italian": {
-                "description": "Questo progetto si è ispirato alla nuova collezione della posta “Swiss Crypto Stamp“.<br><br>Il concetto di questi artefatti consisteva nel creare dei crypto-francobolli in collaborazione con la posta come artista (la collaborazione non è reale, è solo per l’idea del progetto!). <br><br>Oltretutto la collezione era pensata per un anno intero in quanto era sudduvusa in quatro parti (stagionale quindi primavera, estate, ecc), ed a ogni stagione c'era in collaborazione una associazione (una diversa dall'altra) per la difesa e la tutela dell’ambiente/animali.  ",
-                "projects_header": "Progetti",
+                "description": "Questo progetto si è ispirato alla nuova collezione della posta “Swiss Crypto Stamp”.<br><br>Il concetto di questi artefatti consisteva nel creare dei crypto-francobolli in collaborazione con la posta come artista (la collaborazione non è reale, è solo per l’idea del progetto!). <br><br>Oltretutto la collezione era pensata per un anno intero in quanto era sudduvusa in quatro parti (stagionale quindi primavera, estate, ecc), ed a ogni stagione c'era in collaborazione una associazione (una diversa dall'altra) per la difesa e la tutela dell’ambiente/animali.  ",
+                "projects_header": "La mia collezione di crypto francobolli",
                 "contact": "<b>Contatto<b>",
                 "language": "Lingua",
                 "lm": "Maggiori info ->",
@@ -137,7 +143,9 @@
             // Scorri verso l'alto della pagina
             window.scrollTo(0, 0);
         }
+    </script>
 
+    <script>
         // Funzione per aggiornare l'ora
         function updateTime() {
             // Ottieni l'elemento del DOM che mostra l'ora
@@ -147,21 +155,24 @@
             var now = new Date();
             var hours = now.getHours();
             var minutes = now.getMinutes();
-            var meridiem = hours >= 12 ? 'PM' : 'AM';
+            var seconds = now.getSeconds();
 
-            // Formatta le ore nel formato 12 ore
-            hours = hours % 12;
-            hours = hours ? hours : 12; // Se le ore sono 0, le impostiamo a 12
+            // Formatta le ore e i minuti nel formato 24 ore
+            var formattedHours = hours < 10 ? '0' + hours : hours;
+            var formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
 
-            // Aggiungi zero iniziale ai minuti se necessario
-            minutes = minutes < 10 ? '0' + minutes : minutes;
+            // Determina se i due punti devono essere visibili o no
+            var separator = seconds % 2 === 0 ? ':' : ' ';
 
             // Aggiorna il contenuto dell'elemento del clock con l'ora corrente
-            clock.textContent = hours + ':' + minutes + ' ' + meridiem;
+            clock.textContent = formattedHours + separator + formattedMinutes;
         }
 
         // Chiama updateTime ogni secondo per aggiornare l'orologio
         setInterval(updateTime, 1000);
+
+        // Inizializza l'orologio all'avvio
+        updateTime();
 
         // Funzione per aggiornare l'anno
         function updateYear() {
@@ -176,9 +187,23 @@
             yearElement.textContent = year;
         }
 
+        function updateYear2() {
+            // Ottieni l'elemento del DOM che mostra l'anno
+            var year2Element = document.getElementById('year2');
+
+            // Ottieni l'anno corrente
+            var now = new Date();
+            var year = now.getFullYear();
+
+            // Aggiorna il contenuto dell'elemento con l'anno corrente
+            year2Element.textContent = year;
+        }
+
         // Chiama updateYear all'avvio per inizializzare l'anno
         updateYear();
+        updateYear2();
     </script>
+
 </body>
 
 </html>

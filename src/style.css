@@ -987,7 +987,7 @@ li {
         border-top: #0E0E0E solid 1px;
         font-family: 'JetBrains Mono', monospace;
         font-size: 14px;
-        margin: 5% 0 5% 0;
+        margin: auto;
     }
 
     .tl {
