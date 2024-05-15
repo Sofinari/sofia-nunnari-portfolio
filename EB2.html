@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Naris design - Sofia Nunnari</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Naris design portfolio. This is a teaching project from the creative coding course in the second semester of the second year">
+    <meta name="keywords"
+        content="Fake PacMan, PacMan, Portfolio, Sofia Nunnari, Naris design, visual communication, comunicazione visiva, media interaction">
+    <meta name="web_author" content="Sofia Nunnari">
+    <meta name="copyright" content="Sofia Nunnari">
+    <link href="src/style.css" rel="stylesheet" />
+    <!-- <link
+        href="https://fonts.googleapis.com/css?family=Lexend:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
+        rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.svg">
+</head>
+
+<body>
+    <nav>
+        <h5><a title="homepage" href="index.html" onclick="showPage('homepage')">Sofia Nunnari</a></h5>
+
+        <div class="menu">
+            <div id="portfolio-text"><a href="index.html" class="menu-text" style="float: left; ">Portfolio</a></div>
+            <div id="contact">
+                <a href="contact.html" class="menu-text" style=" float: right;">Contact</a>
+            </div>
+        </div>
+
+    </nav>
+    <section id="pr">
+        <h2 id="projects_header" style="margin-bottom: 2%;">My crypto postage stamps collection</h2>
+        <div class="date">2023 29/12</div>
+        <div class="date" id="didattico" style="float: right; color: gray; font-style: italic;">
+            This project is a SUPSI didactic work from the LAB II course.</div>
+    </section>
+    <div>
+        <section class="box-c">
+            <img class="detail" alt="" src="src/IMG/Editoria/Francobolli/Cover.png">
+            <div>
+                <p class="textD" id="description" style="padding: 0;">This project was inspired by the new 'Swiss Crypto Stamp' mail collection. <br><br> The concept of these artefacts was to create crypto-stamps in collaboration with the post office as artist (the collaboration is not real, it is only for the idea of the project!). <br><br>Moreover, the collection was designed for a whole year as it was divided into four parts (seasonal so spring, summer, etc.), and each season there was a collaboration with an association (one different from the other) for the defence and protection of the environment/animals. 
+                </p>
+            </div>
+        </section>
+
+    </div>
+    <section class="grid--main">
+        <img class="imageowerview" alt="" src="src/IMG/Editoria/Francobolli/Francobolli-01.png">
+        <img class="imageowerview" alt="" src="src/IMG/Editoria/Francobolli/Francobolli-02.png">
+        <img class="imageowerview" alt="" src="src/IMG/Editoria/Francobolli/Francobolli-03.png">
+        <img class="imageowerview" alt="" src="src/IMG/Editoria/Francobolli/Francobolli-04.png">
+    </section>
+    <section class="copyright">
+        <b>
+        <p style="margin: 0; float: left;"> Copyright &copy &nbsp</p> 
+        <p id="year" style="margin: 0; float: left;"> year </p> <br>
+        <p style="margin: 0; float: left;">Sofia Nunnari – SUPSI DACD. All rights reserved.</p></b><br>
+        <p id="copyright" style="font-size: 10pt;"><br><br>The contents of this site are protected by copyright laws and are the exclusive property of Sofia Nunnari and&#47;or SUPSI. <br>Any reproduction, distribution, modification or use of the contents without prior written authorisation is prohibited. <br>For usage requests or other information, please contact me.</p>
+    </section>
+    <footer>
+        <ul style="float: left; padding: 0;">
+            <li><b>Social</b></li>
+            <li><a href="https://www.instagram.com/naris_design_?igsh=MTJtdXRuYzdreHA0MA=="
+                    title="Instgram">Instgram</a></li>
+            <li><a title="linkedin" href="http://linkedin.com/in/sofia-nunnari-636b66199">LinkedIn</a>
+            </li>
+        </ul>
+        <ul style="float: left;">
+            <li id="contact"><b id="contact">Contact</b></li>
+            <li><a title="Email" href="mailto:naris.design@outlook.com">Email</a></li>
+
+        </ul>
+        <ul style="float: left; padding: 0;">
+            <li><b id="language">Language</b></li>
+            <li title="English" onclick="cambiaLingua('english')">English</li>
+            <li title="italiano" onclick="cambiaLingua('italian')">Italiano</li>
+        </ul>
+    </footer>
+
+    <script>
+        // Definisci un oggetto per le traduzioni
+        var translations = {
+            "english": {
+                "description": "This project was inspired by the new 'Swiss Crypto Stamp' mail collection. <br><br> The concept of these artefacts was to create crypto-stamps in collaboration with the post office as artist (the collaboration is not real, it is only for the idea of the project!). <br><br>Moreover, the collection was designed for a whole year as it was divided into four parts (seasonal so spring, summer, etc.), and each season there was a collaboration with an association (one different from the other) for the defence and protection of the environment/animals.",
+                "projects_header": "Projects",
+                "contact": "<b>Contact</b>",
+                "language": "Language",
+                "lm": "Learn more ->",
+                "copyright": "<br><br>The contents of this site are protected by copyright laws and are the exclusive property of Sofia Nunnari and&#47;or SUPSI. <br>Any reproduction, distribution, modification or use of the contents without prior written authorisation is prohibited. <br>For usage requests or other information, please contact m.",
+                "didattico": "This project is a SUPSI didactic work from the LAB IV course."
+            },
+            "italian": {
+                "description": "Questo progetto si è ispirato alla nuova collezione della posta “Swiss Crypto Stamp“.<br><br>Il concetto di questi artefatti consisteva nel creare dei crypto-francobolli in collaborazione con la posta come artista (la collaborazione non è reale, è solo per l’idea del progetto!). <br><br>Oltretutto la collezione era pensata per un anno intero in quanto era sudduvusa in quatro parti (stagionale quindi primavera, estate, ecc), ed a ogni stagione c'era in collaborazione una associazione (una diversa dall'altra) per la difesa e la tutela dell’ambiente/animali.  ",
+                "projects_header": "Progetti",
+                "contact": "<b>Contatto<b>",
+                "language": "Lingua",
+                "lm": "Maggiori info ->",
+                "copyright": "<br><br>I contenuti di questo sito, sono protetti dalle leggi sul copyright e sono di proprietà esclusiva di Sofia Nunnari e&#47;o SUPSI. <br>È vietata qualsiasi riproduzione, distribuzione, modifica, o utilizzo dei contenuti senza previa autorizzazione scritta. <br>Per richieste di utilizzo o altre informazioni, si prega di contattarmi.",
+                "didattico": "Questo progetto è un lavoro didattico SUPSI del corso LAB IV"
+            }
+        };
+
+        // Funzione per cambiare la lingua
+        function cambiaLingua(lingua) {
+            console.log("Lingua cambiata:", lingua);
+            // Ottieni tutti gli elementi che devono essere tradotti
+            var elements = document.querySelectorAll('[id^="description"],[id^="didattico"], [id^="d"], [id^="lm"], [id^="avviso_text"], [id^="about_header"], [id^="about_text"], [id^="projects_header"], [id^="language"],[id^="copyright"], footer ul:not(:first-child) li');
+
+            // Memorizza la posizione corrente dello schermo
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+            // Per ogni elemento, cambia il testo in base alla lingua selezionata
+            elements.forEach(function (element) {
+                var key = element.id;
+                if (translations[lingua][key]) {
+                    // Verifica se il testo deve essere interpretato come HTML
+                    var isHTML = translations[lingua][key].indexOf("<") !== -1;
+                    if (isHTML) {
+                        element.innerHTML = translations[lingua][key];
+                    } else {
+                        element.textContent = translations[lingua][key];
+                    }
+                }
+            });
+
+            // Scorri verso l'alto della pagina
+            window.scrollTo(0, 0);
+        }
+
+        // Funzione per aggiornare l'ora
+        function updateTime() {
+            // Ottieni l'elemento del DOM che mostra l'ora
+            var clock = document.getElementById('clock');
+
+            // Ottieni l'ora corrente
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var meridiem = hours >= 12 ? 'PM' : 'AM';
+
+            // Formatta le ore nel formato 12 ore
+            hours = hours % 12;
+            hours = hours ? hours : 12; // Se le ore sono 0, le impostiamo a 12
+
+            // Aggiungi zero iniziale ai minuti se necessario
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+
+            // Aggiorna il contenuto dell'elemento del clock con l'ora corrente
+            clock.textContent = hours + ':' + minutes + ' ' + meridiem;
+        }
+
+        // Chiama updateTime ogni secondo per aggiornare l'orologio
+        setInterval(updateTime, 1000);
+
+        // Funzione per aggiornare l'anno
+        function updateYear() {
+            // Ottieni l'elemento del DOM che mostra l'anno
+            var yearElement = document.getElementById('year');
+
+            // Ottieni l'anno corrente
+            var now = new Date();
+            var year = now.getFullYear();
+
+            // Aggiorna il contenuto dell'elemento con l'anno corrente
+            yearElement.textContent = year;
+        }
+
+        // Chiama updateYear all'avvio per inizializzare l'anno
+        updateYear();
+    </script>
+</body>
+
+</html>

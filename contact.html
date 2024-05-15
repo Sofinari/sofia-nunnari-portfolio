@@ -39,8 +39,8 @@
     <section id="pr">
         <h2 id="projects_header" style="margin-bottom: 2%;">Contact</h2>
         <div>
-            <p class="didascalia" id="year" style="margin-top:2%">10:21 PM</p>
-            <p class="didascalia" id="clock" style="margin-top:0">10:21 PM</p>
+            <p class="didascalia" id="year" style="margin-top:2%">year</p>
+            <p class="didascalia" id="clock" style="margin-top:0">hour</p>
         </div>
     </section>
     <div>
@@ -59,13 +59,26 @@
         </section>
 
     </div>
+
+    <section class="copyright">
+        <b>
+            <p style="margin: 0; float: left;"> Copyright &copy &nbsp</p>
+            <p id="year2" style="margin: 0; float: left;"> year </p> <br>
+            <p style="margin: 0; float: left;">Sofia Nunnari – SUPSI DACD. Tutti i diritti riservati.</p>
+        </b><br>
+        <p style="font-size: 10pt;"><br><br>I contenuti di questo sito, sono protetti dalle leggi sul copyright e sono
+            di proprietà esclusiva di Sofia Nunnari e&#47;o SUPSI.
+            <br>È vietata qualsiasi riproduzione, distribuzione, modifica, o utilizzo dei contenuti senza previa
+            autorizzazione scritta.
+            <br>Per richieste di utilizzo o altre informazioni, si prega di contattarmi
+        </p>
+    </section>
     <footer>
         <ul style="float: left; padding: 0;">
             <li><b>Social</b></li>
             <li><a href="https://www.instagram.com/naris_design_?igsh=MTJtdXRuYzdreHA0MA=="
                     title="Instgram">Instgram</a></li>
-            <li><a title="linkedin"
-                    href="http://linkedin.com/in/sofia-nunnari-636b66199">LinkedIn</a>
+            <li><a title="linkedin" href="http://linkedin.com/in/sofia-nunnari-636b66199">LinkedIn</a>
             </li>
         </ul>
         <ul style="float: left;">
@@ -119,7 +132,9 @@
             // Scorri verso l'alto della pagina
             window.scrollTo(0, 0);
         }
+    </script>
 
+    <script>
         // Funzione per aggiornare l'ora
         function updateTime() {
             // Ottieni l'elemento del DOM che mostra l'ora
@@ -158,8 +173,21 @@
             yearElement.textContent = year;
         }
 
+        function updateYear2() {
+            // Ottieni l'elemento del DOM che mostra l'anno
+            var year2Element = document.getElementById('year2');
+
+            // Ottieni l'anno corrente
+            var now = new Date();
+            var year = now.getFullYear();
+
+            // Aggiorna il contenuto dell'elemento con l'anno corrente
+            year2Element.textContent = year;
+        }
+
         // Chiama updateYear all'avvio per inizializzare l'anno
         updateYear();
+        updateYear2();
     </script>
 </body>
 

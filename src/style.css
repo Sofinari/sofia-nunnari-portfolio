@@ -8,7 +8,12 @@
     -moz-user-select: none;
     user-select: none
 }
-
+.copyright {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12pt;
+    width: 100%;
+    float: left;
+}
 .grid--main {
     display: flex;
     flex-wrap: wrap;
@@ -190,11 +195,11 @@ li {
 .textD {
     width: auto;
     color: #0E0E0E;
-    font-family: ' ' Lexend'';
-    font-size: 18px;
+    font-family: 'Lexend';
+    font-size: 23pt;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 29pt;
     padding: 7% 40% 0 15%;
 
     padding: 0;
@@ -861,10 +866,10 @@ li {
         width: auto;
         color: #0E0E0E;
         font-family: 'Lexend';
-        font-size: 18px;
+        font-size: 23pt;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 29pt;
         padding: 7% 40% 0 15%;
 
         padding: 0;
