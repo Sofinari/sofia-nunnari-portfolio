@@ -159,4 +159,64 @@
         }
     </script>
     <script>
-        // Funzione per aggiorna
+        // Funzione per aggiornare l'ora
+        function updateTime() {
+            // Ottieni l'elemento del DOM che mostra l'ora
+            var clock = document.getElementById('clock');
+
+            // Ottieni l'ora corrente
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            // Formatta le ore e i minuti nel formato 24 ore
+            var formattedHours = hours < 10 ? '0' + hours : hours;
+            var formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+
+            // Determina se i due punti devono essere visibili o no
+            var separator = seconds % 2 === 0 ? ':' : ' ';
+
+            // Aggiorna il contenuto dell'elemento del clock con l'ora corrente
+            clock.textContent = formattedHours + separator + formattedMinutes;
+        }
+
+        // Chiama updateTime ogni secondo per aggiornare l'orologio
+        setInterval(updateTime, 1000);
+
+        // Inizializza l'orologio all'avvio
+        updateTime();
+
+        // Funzione per aggiornare l'anno
+        function updateYear() {
+            // Ottieni l'elemento del DOM che mostra l'anno
+            var yearElement = document.getElementById('year');
+
+            // Ottieni l'anno corrente
+            var now = new Date();
+            var year = now.getFullYear();
+
+            // Aggiorna il contenuto dell'elemento con l'anno corrente
+            yearElement.textContent = year;
+        }
+
+        function updateYear2() {
+            // Ottieni l'elemento del DOM che mostra l'anno
+            var year2Element = document.getElementById('year2');
+
+            // Ottieni l'anno corrente
+            var now = new Date();
+            var year = now.getFullYear();
+
+            // Aggiorna il contenuto dell'elemento con l'anno corrente
+            year2Element.textContent = year;
+        }
+
+        // Chiama updateYear all'avvio per inizializzare l'anno
+        updateYear();
+        updateYear2();
+    </script>
+
+</body>
+
+</html>
