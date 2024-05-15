@@ -71,16 +71,10 @@
 
     <section class="copyright">
         <b>
-            <p style="margin: 0; float: left;"> Copyright &copy &nbsp</p>
-            <p id="year" style="margin: 0; float: left;"> year </p> <br>
-            <p style="margin: 0; float: left;">Sofia Nunnari – SUPSI DACD. Tutti i diritti riservati.</p>
-        </b><br>
-        <p style="font-size: 10pt;"><br><br>I contenuti di questo sito, sono protetti dalle leggi sul copyright e sono
-            di proprietà esclusiva di Sofia Nunnari e&#47;o SUPSI.
-            <br>È vietata qualsiasi riproduzione, distribuzione, modifica, o utilizzo dei contenuti senza previa
-            autorizzazione scritta.
-            <br>Per richieste di utilizzo o altre informazioni, si prega di contattarmi
-        </p>
+        <p style="margin: 0; float: left;"> Copyright &copy &nbsp</p> 
+        <p id="year2" style="margin: 0; float: left;"> year </p> <br>
+        <p style="margin: 0; float: left;">Sofia Nunnari – SUPSI DACD. All rights reserved.</p></b><br>
+        <p id="copyright" style="font-size: 10pt;"><br><br>The contents of this site are protected by copyright laws and are the exclusive property of Sofia Nunnari and&#47;or SUPSI. <br>Any reproduction, distribution, modification or use of the contents without prior written authorisation is prohibited. <br>For usage requests or other information, please contact me.</p>
     </section>
     <footer>
         <ul style="float: left; padding: 0;">
@@ -111,6 +105,7 @@
                 "contact": "<b>Contact</b>",
                 "language": "Language",
                 "didattico": "This project needs access to the camera to function.",
+                "copyright": "<br><br>The contents of this site are protected by copyright laws and are the exclusive property of Sofia Nunnari and&#47;or SUPSI. <br>Any reproduction, distribution, modification or use of the contents without prior written authorisation is prohibited. <br>For usage requests or other information, please contact m.",
                 "lm": "Learn more ->"
             },
             "italian": {
@@ -119,6 +114,7 @@
                 "contact": "<b>Contatto<b>",
                 "language": "Lingua",
                 "didattico": "Per funzionare, questo progetto ha bisogno di accedere alla telecamera.",
+                "copyright": "<br><br>I contenuti di questo sito, sono protetti dalle leggi sul copyright e sono di proprietà esclusiva di Sofia Nunnari e&#47;o SUPSI. <br>È vietata qualsiasi riproduzione, distribuzione, modifica, o utilizzo dei contenuti senza previa autorizzazione scritta. <br>Per richieste di utilizzo o altre informazioni, si prega di contattarmi.",
                 "lm": "Maggiori info ->"
             }
         };
@@ -127,7 +123,7 @@
         function cambiaLingua(lingua) {
             console.log("Lingua cambiata:", lingua);
             // Ottieni tutti gli elementi che devono essere tradotti
-            var elements = document.querySelectorAll('[id^="pacman_desc"], [id^="didattico"], [id^="Fuga_desc"], [id^="d"], [id^="lm"], [id^="avviso_text"], [id^="about_header"], [id^="about_text"], [id^="projects_header"], [id^="language"], footer ul:not(:first-child) li');
+            var elements = document.querySelectorAll('[id^="pacman_desc"], [id^="didattico"], [id^="Fuga_desc"], [id^="d"], [id^="lm"], [id^="avviso_text"], [id^="about_header"], [id^="about_text"], [id^="projects_header"], [id^="language"],[id^="copyright"], footer ul:not(:first-child) li');
 
             // Memorizza la posizione corrente dello schermo
             var currentScroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
