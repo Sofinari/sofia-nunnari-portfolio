@@ -168,4 +168,42 @@
             clock.textContent = formattedHours + separator + formattedMinutes;
         }
 
-   
+        // Chiama updateTime ogni secondo per aggiornare l'orologio
+        setInterval(updateTime, 1000);
+
+        // Inizializza l'orologio all'avvio
+        updateTime();
+
+        // Funzione per aggiornare l'anno
+        function updateYear() {
+            // Ottieni l'elemento del DOM che mostra l'anno
+            var yearElement = document.getElementById('year');
+
+            // Ottieni l'anno corrente
+            var now = new Date();
+            var year = now.getFullYear();
+
+            // Aggiorna il contenuto dell'elemento con l'anno corrente
+            yearElement.textContent = year;
+        }
+
+        function updateYear2() {
+            // Ottieni l'elemento del DOM che mostra l'anno
+            var year2Element = document.getElementById('year2');
+
+            // Ottieni l'anno corrente
+            var now = new Date();
+            var year = now.getFullYear();
+
+            // Aggiorna il contenuto dell'elemento con l'anno corrente
+            year2Element.textContent = year;
+        }
+
+        // Chiama updateYear all'avvio per inizializzare l'anno
+        updateYear();
+        updateYear2();
+    </script>
+
+</body>
+
+</html>
