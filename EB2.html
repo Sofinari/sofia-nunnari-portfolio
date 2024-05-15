@@ -164,4 +164,21 @@
         setInterval(updateTime, 1000);
 
         // Funzione per aggiornare l'anno
-   
+        function updateYear() {
+            // Ottieni l'elemento del DOM che mostra l'anno
+            var yearElement = document.getElementById('year');
+
+            // Ottieni l'anno corrente
+            var now = new Date();
+            var year = now.getFullYear();
+
+            // Aggiorna il contenuto dell'elemento con l'anno corrente
+            yearElement.textContent = year;
+        }
+
+        // Chiama updateYear all'avvio per inizializzare l'anno
+        updateYear();
+    </script>
+</body>
+
+</html>

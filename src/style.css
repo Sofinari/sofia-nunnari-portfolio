@@ -1005,4 +1005,14 @@ li {
 
     .menu-text {
         color: #aaaaaa;
-        font-family:
+        font-family: 'Lexend';
+        font-size: 12pt;
+        text-transform: uppercase;
+        float: right;
+        padding-left: 10%;
+    }
+
+    .video {
+        width: 80%; margin: 0 10%;
+    }
+}
