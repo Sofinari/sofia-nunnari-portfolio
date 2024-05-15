@@ -8,12 +8,15 @@
     -moz-user-select: none;
     user-select: none
 }
+
 .copyright {
     font-family: 'JetBrains Mono', monospace;
     font-size: 12pt;
     width: 100%;
     float: left;
+    margin: 2% 0%;
 }
+
 .grid--main {
     display: flex;
     flex-wrap: wrap;
@@ -458,6 +461,7 @@ li {
     .detail {
         width: 100%;
     }
+
     .imageowerview {
         width: 100%;
         height: auto;
@@ -484,9 +488,27 @@ li {
         float: right;
         padding-left: 2%;
     }
+
     .video {
-        width: 100%; margin: 0;
+        width: 100%;
+        margin: 0;
     }
+
+    .imageA {
+        width: 90%;
+        margin: auto;
+        padding: 5px 0px;
+    }
+
+    .imageB {
+        width: 90%;
+        margin: auto;
+        padding: 5px 0px;
+    }
+
+    /* #GalleryPhoto {
+        display: ruby;
+    } */
 }
 
 
@@ -859,13 +881,13 @@ li {
         font-style: normal;
         font-weight: 400;
         line-height: 29pt;
-        text-align: justify;
+        text-align: left;
         /* text-justify: distribute; */
         padding: 7% 21.5% 0 15%;
     }
 
     .textD {
-        width: auto;
+        /* width: auto; */
         color: #0E0E0E;
         font-family: 'Lexend';
         font-size: 23pt;
@@ -873,7 +895,6 @@ li {
         font-weight: 400;
         line-height: 29pt;
         padding: 7% 40% 0 15%;
-
         padding: 0;
         width: 50%;
         float: left;
@@ -1013,6 +1034,20 @@ li {
     }
 
     .video {
-        width: 80%; margin: 0 10%;
+        width: 80%;
+        margin: 0 10%;
     }
+
+    .imageA {
+        width: 25%;
+        padding: 0px 5px;
+    }
+
+    .imageB {
+        width: 50%;
+        padding: 10px 5px;
+    }
+    /* #GalleryPhoto {
+        display: flow;
+    } */
 }
