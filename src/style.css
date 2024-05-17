@@ -116,6 +116,7 @@ li {
     border-radius: 10px;
     border: 1px solid #1f65fd;
     background: #dae5ff;
+    margin-top: 10%;
 }
 
 #avviso-blu>p {
@@ -523,6 +524,9 @@ li {
         width: 90%;
         margin: auto;
         padding: 5px 0px;
+    }
+    #avviso-blu {
+        margin-top: 5%;
     }
 
     /* #GalleryPhoto {
