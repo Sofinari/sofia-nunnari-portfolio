@@ -114,13 +114,13 @@ li {
     height: auto;
     flex-shrink: 0;
     border-radius: 10px;
-    border: 1px solid #1f65fd;
+    border: 1px solid #0762C8;
     background: #dae5ff;
     margin-top: 10%;
 }
 
 #avviso-blu>p {
-    color: #0051ff;
+    color: #0762C8;
     font-family: 'Lexend';
     font-size: 18px;
     font-style: normal;
@@ -153,7 +153,7 @@ li {
     font-family: 'JetBrains Mono', monospace;
     font-size: 16px;
     margin: 5% 0;
-    color: #0051ff;
+    color: #0762C8;
     font-weight: 600;
 }
 
@@ -184,8 +184,8 @@ li {
     text-align: left;
     outline: none;
     transition: 0.4s;
-    border-bottom: 2px solid #025ed0;
-    border-top: 2px solid #025ed0;
+    border-bottom: 2px solid #0762C8;
+    border-top: 2px solid #0762C8;
     background-color: #f7f7f7;
     padding: 2% 0;
     width: 100%;
