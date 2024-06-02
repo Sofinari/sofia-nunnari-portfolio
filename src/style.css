@@ -420,7 +420,7 @@ li {
         width: 100%;
         height: auto;
         flex-shrink: 0;
-
+        border-radius: 10px;
         background: #BFBFBF;
     }
 
@@ -708,7 +708,7 @@ li {
         width: 390px;
         height: 390px;
         flex-shrink: 0;
-
+        border-radius: 10px;
         background: #BFBFBF;
     }
 
@@ -981,6 +981,7 @@ li {
         width: 100%;
         height: auto;
         flex-shrink: 0;
+        border-radius: 10px;
         background: #BFBFBF;
     }
 
