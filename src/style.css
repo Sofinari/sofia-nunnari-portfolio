@@ -94,7 +94,7 @@ li {
     width: 100%;
     height: auto;
     flex-shrink: 0;
-    border-radius: 10px;
+    border-radius: 10px;;
     border: 1px solid #FFA048;
     background: #FFF5DA;
 }
@@ -113,7 +113,7 @@ li {
     width: 100%;
     height: auto;
     flex-shrink: 0;
-    border-radius: 10px;
+    border-radius: 10px;;
     border: 1px solid #0762C8;
     background: #dae5ff;
     margin-top: 10%;
@@ -161,7 +161,7 @@ li {
     width: 100%;
     height: auto;
     flex-shrink: 0;
-    border-radius: 10px;
+    border-radius: 10px;;
     border: 1px solid #FFA048;
     background: #FFF5DA;
 }
@@ -405,7 +405,7 @@ li {
 
     .titlecategory {
         color: #0E0E0E;
-        text-align: right;
+        text-align: left;
         font-family: 'Lexend';
         font-size: 24px;
         font-style: normal;
@@ -420,7 +420,7 @@ li {
         width: 100%;
         height: auto;
         flex-shrink: 0;
-        border-radius: 10px;
+        border-radius: 20px;
         background: #BFBFBF;
     }
 
@@ -708,7 +708,7 @@ li {
         width: 390px;
         height: 390px;
         flex-shrink: 0;
-        border-radius: 10px;
+        border-radius: 20px;
         background: #BFBFBF;
     }
 
@@ -981,7 +981,7 @@ li {
         width: 100%;
         height: auto;
         flex-shrink: 0;
-        border-radius: 10px;
+        border-radius: 20px;
         background: #BFBFBF;
     }
 
