@@ -3,15 +3,15 @@
     <!-- Homepage -->
     <url>
         <loc>https://sofinari.github.io/sofia-nunnari-portfolio/</loc>
-        <lastmod>2024-06-19</lastmod>
+        <lastmod>2024-06-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-
+    
     <!-- Project Details "Fake Pacman" -->
     <url>
         <loc>https://sofinari.github.io/sofia-nunnari-portfolio/CC1.html</loc>
-        <lastmod>2024-06-19</lastmod>
+        <lastmod>2024-06-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -19,7 +19,7 @@
     <!-- Details Project "Escape from the Nightmare" -->
     <url>
         <loc>https://sofinari.github.io/sofia-nunnari-portfolio/CC2.html</loc>
-        <lastmod>2024-06-19</lastmod>
+        <lastmod>2024-06-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -27,7 +27,7 @@
     <!-- Details Project "EduPet Aquarium Manual" -->
     <url>
         <loc>https://sofinari.github.io/sofia-nunnari-portfolio/EB1.html</loc>
-        <lastmod>2024-06-19</lastmod>
+        <lastmod>2024-06-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -35,7 +35,7 @@
     <!-- Details Project "Crypto Postage Stamps Collection" -->
     <url>
         <loc>https://sofinari.github.io/sofia-nunnari-portfolio/EB2.html</loc>
-        <lastmod>2024-06-19</lastmod>
+        <lastmod>2024-06-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -43,7 +43,7 @@
     <!-- Details Project "Zurich Photos" -->
     <url>
         <loc>https://sofinari.github.io/sofia-nunnari-portfolio/PV1.html</loc>
-        <lastmod>2024-06-19</lastmod>
+        <lastmod>2024-06-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -51,7 +51,7 @@
     <!-- Contact Page -->
     <url>
         <loc>https://sofinari.github.io/sofia-nunnari-portfolio/contact.html</loc>
-        <lastmod>2024-06-19</lastmod>
+        <lastmod>2024-06-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
