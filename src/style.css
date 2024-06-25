@@ -10,6 +10,64 @@
     user-select: none
 }
 
+.gallery__item {
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.gallery__item.hidden {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.filter-buttons {
+    margin-bottom: 4%;
+}
+
+.filter-btn {
+    margin: 1% auto;
+    padding: 10px 20px;
+    background-color: #e6e6e6;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #ccc;
+}
+
+.filter-btn.active {
+    background-color: #0762C8;
+    color: white;
+}
+
+.gallery__item:hover .titlecategory {
+    color: #0762C8;
+    transition: color 0.3s ease;
+}
+
+.gallery__item:hover .date {
+    color: #0762C8;
+    transition: color 0.3s ease;
+}
+
+.gallery__item:hover .lm {
+    color: #0762C8;
+    transition: color 0.3s ease;
+}
+
+/* Esempio di animazione fade-in */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade-in.active {
+    opacity: 1;
+}
+
+
+
 .box1 {
     width: 50%;
 }
@@ -252,6 +310,10 @@ li {
 
 
 @media (min-width: 320px) {
+    .grid-nav {
+        display: initial;
+    }
+
     .box1 {
         width: 100%;
     }
@@ -394,7 +456,8 @@ li {
     .box-w {
         width: 100%;
         height: auto;
-        margin-bottom: 25%;
+        margin-bottom: 0;
+        padding-top: 10%;
         /* background: gray; */
     }
 
@@ -433,7 +496,7 @@ li {
         width: 100%;
         height: auto;
         flex-shrink: 0;
-        border-radius: 20px;
+        border-radius: 14px;
         background: #BFBFBF;
     }
 
@@ -583,12 +646,11 @@ li {
         font-family: 'Lexend';
         font-size: 22px;
         font-style: normal;
-        font-weight: 600;
-        line-height: 12px;
+        line-height: 1;
         /* 54.545% */
         letter-spacing: -0.66px;
         float: left;
-        display: contents;
+        /* display: contents; */
         vertical-align: baseline;
     }
 
@@ -689,9 +751,9 @@ li {
     }
 
     .box-w {
-        width: 390px;
+        width: min-content;
         height: auto;
-        /* background: gray; */
+        padding-top: 0;
     }
 
     .wt {
@@ -823,6 +885,20 @@ li {
 }
 
 @media (min-width: 1020px) {
+
+    .grid-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        /* Definisci altre proprietà di griglia secondo necessità */
+    }
+
+    .grid-nav {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /* Definisci altre proprietà di griglia secondo necessità */
+    }
+
     .box1 {
         width: 50%;
     }
@@ -965,7 +1041,7 @@ li {
     }
 
     .text {
-        width: auto;
+        width: 300%;
         color: #0E0E0E;
         font-family: 'Lexend';
         font-size: 20pt;
@@ -974,7 +1050,7 @@ li {
         line-height: 29pt;
         text-align: left;
         /* text-justify: distribute; */
-        padding: 7% 21.5% 0 15%;
+        /* padding: 7% 21.5% 0 15%; */
     }
 
     .textD {
@@ -1028,13 +1104,12 @@ li {
 
     .titlecategory {
         color: #0E0E0E;
-        text-align: right;
+        text-align: left;
         font-family: 'Lexend';
-        font-size: 24px;
+        font-size: 18pt;
         font-style: normal;
         font-weight: 500;
-        line-height: 28px;
-        /* 116.667% */
+        line-height: 24pt;
         float: left;
     }
 
@@ -1042,7 +1117,7 @@ li {
         width: 100%;
         height: auto;
         flex-shrink: 0;
-        border-radius: 20px;
+        border-radius: 14px;
         background: #BFBFBF;
     }
 
@@ -1078,12 +1153,11 @@ li {
         color: #0E0E0E;
         text-align: right;
         font-family: 'JetBrains Mono', monospace;
-        font-size: 14px;
+        font-size: 10pt;
         font-style: normal;
         font-weight: 500;
-        line-height: 12px;
-        /* 100% */
-        float: right;
+        line-height: 12pt;
+        float: left;
         margin-top: 2%;
     }
 
@@ -1105,8 +1179,8 @@ li {
 
     .menu {
         font-weight: 600;
-        width: 25%;
-        float: right;
+        width: 100%;
+        float: inline-end;
     }
 
     .menu-text {

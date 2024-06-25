@@ -24,13 +24,15 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="grid-nav">
         <h5><a title="homepage" href="index.html" onclick="showPage('homepage')">Sofia Nunnari</a></h5>
-
+        <div style="width: 100%;"></div>
         <div class="menu">
-            <div id="portfolio-text"><a href="index.html" class="menu-text" style="float: left; ">Portfolio</a></div>
+            <div id="portfolio-text"><a href="index.html" class="menu-text active"
+                    style="float: inline-start; padding: 0;">Portfolio</a>
+            </div>
             <div id="contact">
-                <a href="contact.html" class="menu-text active" style=" float: right;">Contact</a>
+                <a href="contact.html" class="menu-text" style="float: inline-end;">Contact</a>
             </div>
         </div>
 

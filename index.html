@@ -6,26 +6,44 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <meta name="description" content="Sofia Nunnari - Naris design portfolio. I am Sofia Nunnari and I am a visual communicator specializing in media interaction design (i.e., everything related to videos, websites and the like, therefore of digital media)">
-    <meta name="keywords" content="Portfolio, Sofia Nunnari, Naris design, visual communication, comunicazione visiva, media interaction, graphic design, progettazione grafica, digital media, multimedia design, web design, UI/UX design, branding, design grafico, interazione multimediale">
+    <meta name="description"
+        content="Sofia Nunnari - Naris design portfolio. I am Sofia Nunnari and I am a visual communicator specializing in media interaction design (i.e., everything related to videos, websites and the like, therefore of digital media)">
+    <meta name="keywords"
+        content="Portfolio, Sofia Nunnari, Naris design, visual communication, comunicazione visiva, media interaction, graphic design, progettazione grafica, digital media, multimedia design, web design, UI/UX design, branding, design grafico, interazione multimediale">
     <meta name="author" content="Sofia Nunnari">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="robots" content="all">
     <meta name="copyright" content="© 2024 Sofia Nunnari. All rights reserved.">
-   
-    <!-- <link href="https://fonts.googleapis.com/css?family=Lexend:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet"> -->    
+
     <link href="src/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="google-site-verification" content="dUFtoiH9WcTtlHhFyg7IpmnI8GUOuVXfuIxHXDdFbYU" />
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
 
-
     <style>
+        .article {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 2%;
+        }
+        @media (min-width: 320px) {
+            .article {
+            border-radius: 22px;
+            padding: 4%;
+        }
+        }
+
+
         @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
@@ -44,105 +62,51 @@
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            /* grid-template-rows: repeat(8, 5vw); */
-            grid-gap: 1.5rem;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            /* padding: 20px; */
+        }
+
+        .gallery__item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery__item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
         .gallery__img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
             display: block;
         }
 
-        .gallery__item--1 {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 3;
-
-            /** Alternative Syntax **/
-            /* grid-column: 1 / span 2;  */
-            /* grid-row: 1 / span 2; */
-        }
-
-        .gallery__item--2 {
-            grid-column-start: 3;
-            grid-column-end: 5;
-            grid-row-start: 1;
-            grid-row-end: 3;
-
-            /** Alternative Syntax **/
-            /* grid-column: 3 / span 2;  */
-            /* grid-row: 1 / span 2; */
-        }
-
-        .gallery__item--3 {
-            grid-column-start: 5;
-            grid-column-end: 9;
-            grid-row-start: 1;
-            grid-row-end: 6;
-
-            /** Alternative Syntax **/
-            /* grid-column: 5 / span 4;
-  grid-row: 1 / span 5; */
-        }
-
-        .gallery__item--4 {
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 3;
-            grid-row-end: 6;
-
-            /** Alternative Syntax **/
-            /* grid-column: 1 / span 4;  */
-            /* grid-row: 3 / span 3; */
-        }
-
-        .gallery__item--5 {
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 6;
-            grid-row-end: 9;
-
-            /** Alternative Syntax **/
-            /* grid-column: 1 / span 4; */
-            /* grid-row: 6 / span 3; */
-        }
-
-        .gallery__item--6 {
-            grid-column-start: 9;
-            grid-column-end: 5;
-            grid-row-start: 6;
-            grid-row-end: 9;
-
-            /** Alternative Syntax **/
-            /* grid-column: 1 / span 4; */
-            /* grid-row: 6 / span 3; */
-        }
-
-        .gallery__item--7 {
-            grid-column-start: 1;
-            grid-column-end: 9;
-            grid-row-start: 9;
-            grid-row-end: 9;
-            /* grid-column: 5 / span 4; */
-            /* grid-row: 6 / span 3; */
+        .titlecategory,
+        .date,
+        .lm {
+            padding: 10px;
+            /* text-align: left; */
+            float: initial;
         }
     </style>
 
 </head>
 
 <body>
-    <nav>
+    <nav class="grid-nav">
         <h5><a title="homepage" href="index.html" onclick="showPage('homepage')">Sofia Nunnari</a></h5>
-
+        <div style="width: 100%;"></div>
         <div class="menu">
-            <div id="portfolio-text"><a href="index.html" class="menu-text active" style="float: left; ">Portfolio</a>
+            <div id="portfolio-text"><a href="index.html" class="menu-text active"
+                    style="float: inline-start; padding: 0;">Portfolio</a>
             </div>
             <div id="contact">
-                <a href="contact.html" class="menu-text" style=" float: right;">Contact</a>
+                <a href="contact.html" class="menu-text" style="float: inline-end;">Contact</a>
             </div>
         </div>
 
@@ -165,141 +129,76 @@
         <div>
             <a href="https://www.linkedin.com/pulse/virtual-reality-innovation-sofia-nunnari-hetaf/">
                 <section class="box-w">
-                        <div class="wt">
-                            <p class="titlecategory">Linkedin articles</p>
-                        </div>
+                    <div class="wt">
+                        <p class="titlecategory" style="padding: 0; text-align: left; float: none;">Linkedin articles
+                        </p>
+                    </div>
+                    <div class="article">
                         <img class="preview" alt="" src="src/IMG/VR.png">
                         <div class="date">2024 01/06</div>
-                        <p style="font-family: 'Lexend';"><br><b>Virtual reality, a futuristic innovation.</b> <br> In my article I share some of my thoughts on this increasingly emerging and innovative technology, which by the way I will be using for my thesis project.</p>
+                        <p style="font-family: 'Lexend'; text-align: left;"><br><b>Virtual reality, a futuristic
+                                innovation.</b> <br> In my
+                            article I share some of my thoughts on this increasingly emerging and innovative technology,
+                            which by the way I will be using for my thesis project.</p>
                         <div class="lm" id="lm">Learn more -></div>
+                    </div>
                 </section>
             </a>
         </div>
     </section>
 
 
-    <section>
+    <section class="grid-section">
         <h2 id="about_header">About me</h2>
         <p class="text" id="about_text">
-            I have always been fascinated by the world of communication and its evolution among the different media
-            available, especially in digital media. <br><br> My next goal is to perform a master's degree in video
-            game creation. <br><br>I finished training as an <b>interactive media designer at CSIA</b>, and then
-            continued my education by attending a <b> Bachelor's degree in visual communication at SUPSI University</b>
-            (in
-            Mendrisio, Switzerland).<br><br> I worked as a collaborator at <a style="color: #0762C8;"
-                href="https://www.pixel-plus.ch/"> pixel-plus</a>.
+            I am deeply fascinated by the dynamic evolution of communication through various media, particularly in the
+            area of digital platforms. My path began with a training as an Interactive Media Designer at CSIA, followed
+            by a Bachelor's degree in Visual Communication at SUPSI University in Mendrisio, Switzerland. <br> <br>
+            Driven by a passion for innovation and creativity, I am committed to exploring the intersection of design
+            and technology. My career has been enriched by practical experiences, including working with<a
+                style="color: #0762C8;" href="https://www.pixel-plus.ch/"> pixel-plus </a>, where I contributed to
+            several projects that required technical UX/UI skills. <br> <br> My next aspiration is to pursue a master's
+            degree specializing in video game creation, with the goal of further deepening my understanding of
+            interactive media and narrative experiences.
+
         </p>
     </section>
 
-    <section id="pr">
-
-        <h2 id="projects_header" style="margin-bottom: 0%;">
+    <section id="projects">
+        <h2 id="projects_header" style="margin-bottom: 2%;">
             Projects
         </h2>
+        <div class="filter-buttons">
+            <button class="filter-btn" data-category="all">All</button>
+            <button class="filter-btn" data-category="creative-coding">Creative Coding</button>
+            <button class="filter-btn" data-category="photo-video">Photo & Video</button>
+            <button class="filter-btn" data-category="editorial-brand">Editorial & Brand</button>
+        </div>
+        <div class="gallery">
+            <!-- Creative Coding Projects -->
+            <div class="gallery__item gallery__item--1" data-category="creative-coding">
+                <img src="src/IMG/PacMan.png" alt="Fake Pacman" class="gallery__img">
+            </div>
+            <div class="gallery__item gallery__item--1" data-category="creative-coding">
+                <img src="src/IMG/FDI.png" alt="Fuga-dall-incubo" class="gallery__img">
+            </div>
 
-        <section id="projects_container" style="display: none;"></section>
+            <!-- Photo & Video Projects -->
+            <div class="gallery__item gallery__item--2" data-category="photo-video">
+                <img src="src/IMG/Photo-Video/Zurigo/Cover.png" alt="Photo Zürich" class="gallery__img">
+            </div>
+
+            <!-- Editorial & Brand Projects -->
+            <div class="gallery__item gallery__item--3" data-category="editorial-brand">
+                <img src="src/IMG/Editoria/EduPet/Cover.png" alt="EduPet Aquarium Manual" class="gallery__img">
+            </div>
+            <div class="gallery__item gallery__item--3" data-category="editorial-brand">
+                <img src="src/IMG/Editoria/Francobolli/Cover.png" alt="Crypto postage stamps" class="gallery__img">
+            </div>
+        </div>
+
     </section>
-    <button class="accordion">
-        <div class="arrow">Creative Coding<img src="src/arrow-down.svg" height="35" width="35"></div>
-    </button>
-    <div class="panel">
-        <div class="griglia">
-            <div class="colonna_2">
 
-                <section class="box-w">
-                    <a href="CC1.html">
-                        <div class="wt">
-                            <p class="titlecategory">Fake Pacman</p>
-                        </div>
-                        <img class="preview" alt="" src="src/IMG/PacMan.png">
-                        <div class="date">2023 01/02</div>
-                        <div class="lm" id="lm">Learn more -></div>
-                    </a>
-                </section>
-
-            </div>
-
-            <div class="colonna_2">
-
-                <section class="box-w">
-                    <a href="CC2.html">
-                        <div class="wt">
-                            <p class="titlecategory">Fuga-dall-incubo</p>
-                        </div>
-                        <img class="preview" alt="" src="src/IMG/FDI.png">
-                        <div class="date">2023 01/02</div>
-                        <div class="lm" id="lm">Learn more -></div>
-                    </a>
-                </section>
-
-            </div>
-        </div>
-    </div>
-
-
-
-    <button class="accordion">
-        <div class="arrow">Photography & Video<img src="src/arrow-down.svg" height="35" width="35"></div>
-    </button>
-    <div class="panel">
-        <div class="griglia">
-            <div class="colonna_2">
-                <div id="avviso_aggiornamento">
-                    <p id="avviso_aggiornamento_text">Being updated</p>
-                </div>
-            </div>
-            <section class="box-w">
-                <a href="PV1.html">
-                    <div class="wt">
-                        <p class="titlecategory">Photo Zürich</p>
-                    </div>
-                    <img class="preview" alt="" src="src/IMG/Photo-Video/Zurigo/Cover.png">
-                    <div class="date">2023 29/12</div>
-                    <div class="lm" id="lm">Learn more -></div>
-                </a>
-            </section>
-        </div>
-    </div>
-
-
-
-    <button class="accordion">
-        <div class="arrow">Editorial & Brand<img src="src/arrow-down.svg" height="35" width="35"></div>
-    </button>
-    <div class="panel">
-        <div class="griglia">
-
-            <!-- <div class="colonna_2">
-                <div id="avviso_aggiornamento">
-                    <p id="avviso_aggiornamento_text">Being updated</p>
-                </div>
-            </div> -->
-            <div class="colonna_2">
-
-                <section class="box-w">
-                    <a href="EB1.html">
-                        <div class="wt">
-                            <p class="titlecategory">EduPet Aquarium Manual</p>
-                        </div>
-                        <img class="preview" alt="" src="src/IMG/Editoria/EduPet/Cover.png">
-                        <div class="date">2023 29/12</div>
-                        <div class="lm" id="lm">Learn more -></div>
-                    </a>
-                </section>
-                <section class="box-w">
-                    <a href="EB2.html">
-                        <div class="wt">
-                            <p class="titlecategory">Crypto postage stamps</p>
-                        </div>
-                        <img class="preview" alt="" src="src/IMG/Editoria/Francobolli/Cover.png">
-                        <div class="date">2023 29/12</div>
-                        <div class="lm" id="lm">Learn more -></div>
-                    </a>
-                </section>
-
-            </div>
-        </div>
-    </div>
 
     <section class="copyright">
         <b>
@@ -308,7 +207,7 @@
             <p style="margin: 0; float: left;">Sofia Nunnari – SUPSI DACD. All rights reserved.</p>
         </b><br>
         <p id="copyright"><br><br>The contents of this site are protected by copyright laws and
-            are the exclusive property of Sofia Nunnari and&#47;or SUPSI. Any reproduction, distribution,
+            are the exclusive property of my name and&#47;or SUPSI. Any reproduction, distribution,
             modification or use of the contents without prior written authorisation is prohibited. For usage
             requests or other information, please contact me.</p>
     </section>
@@ -337,6 +236,107 @@
     </footer>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterButtons = document.querySelectorAll(".filter-btn");
+            const galleryContainer = document.querySelector(".gallery");
+
+            const projects = [
+                {
+                    category: "editorial-brand",
+                    title: "EduPet Aquarium Manual",
+                    image: "src/IMG/Editoria/EduPet/Cover.png",
+                    date: "2023 29/12",
+                    link: "EB1.html"
+                },
+                {
+                    category: "creative-coding",
+                    title: "Fake Pacman",
+                    image: "src/IMG/PacMan.png",
+                    date: "2023 01/02",
+                    link: "CC1.html"
+                },
+                {
+                    category: "creative-coding",
+                    title: "Fuga-dall-incubo",
+                    image: "src/IMG/FDI.png",
+                    date: "2023 01/02",
+                    link: "CC2.html"
+                },
+                {
+                    category: "editorial-brand",
+                    title: "Crypto postage stamps",
+                    image: "src/IMG/Editoria/Francobolli/Cover.png",
+                    date: "2022 26/12",
+                    link: "EB2.html"
+                },
+                {
+                    category: "photo-video",
+                    title: "Photo Zürich",
+                    image: "src/IMG/Photo-Video/Zurigo/Cover.png",
+                    date: "2020 14/01",
+                    link: "PV1.html"
+                }
+                // Aggiungi altri progetti qui
+            ];
+
+            function renderProjects(category) {
+                let filteredProjects = projects;
+                if (category !== "all") {
+                    filteredProjects = projects.filter(project => project.category === category);
+                }
+
+                const galleryHTML = filteredProjects.map(project => `
+                    <div class="gallery__item" data-category="${project.category}">
+                        <a href="${project.link}">
+                            <img src="${project.image}" alt="${project.title}" class="gallery__img">
+                            <div class="titlecategory">${project.title}</div>
+                            <div class="date">${project.date}</div>
+                            <div class="lm" id="lm">Learn more -></div>
+                        </a>
+                    </div>
+                `).join("");
+
+                galleryContainer.innerHTML = galleryHTML;
+            }
+
+            filterButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const category = button.getAttribute("data-category");
+
+                    // Se il bottone è già attivo, rimuovi la classe "active"
+                    if (button.classList.contains("active")) {
+                        button.classList.remove("active");
+                        renderProjects("all"); // Mostra tutti i progetti quando nessun filtro è attivo
+                    } else {
+                        // Rimuovi la classe "active" da tutti i bottoni
+                        filterButtons.forEach(btn => {
+                            btn.classList.remove("active");
+                        });
+
+                        // Aggiungi la classe "active" solo al bottone cliccato
+                        button.classList.add("active");
+
+                        renderProjects(category);
+                    }
+                });
+            });
+
+            // Mostra tutti i progetti al caricamento della pagina
+            renderProjects("all");
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/12.1.0/lazyload.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var lazyLoadInstance = new LazyLoad({
+                elements_selector: ".gallery__img" // Selettore delle immagini da caricare in modo differito
+            });
+        });
+    </script>
+
+
+    <script>
         // Definisci un oggetto per le traduzioni
         var translations = {
             "english": {
@@ -346,7 +346,7 @@
                 "d": "Visual communicator<br> specializing in Media Interacton<br> design.",
                 "avviso_text-blu": "News about my thesis project will follow soon!",
                 "about_header": "About me",
-                "about_text": "I have always been fascinated by the world of communication and its evolution among the different media  available, especially in digital media. <br><br> My next goal is to perform a master's degree in video game creation. <br><br>I finished training as an <b>interactive media designer at CSIA</b>, and then continued my education by attending a <b> Bachelor's degree in visual communication at SUPSI University</b> (in Mendrisio, Switzerland).<br><br>  I work as a collaborator at pixel-plus.",
+                "about_text": "I am deeply fascinated by the dynamic evolution of communication through various media, particularly in the area of digital platforms. My path began with a training as an Interactive Media Designer at CSIA, followed by a Bachelor's degree in Visual Communication at SUPSI University in Mendrisio, Switzerland. <br> <br> Driven by a passion for innovation and creativity, I am committed to exploring the intersection of design and technology. My career has been enriched by practical experiences, including working with pixel-plus, where I contributed to several projects that required technical UX/UI skills. <br> <br> My next aspiration is to pursue a master's degree specializing in video game creation, with the goal of further deepening my understanding of interactive media and narrative experiences.",
                 "projects_header": "<a href='Projects.html'>Progetti</a>",
                 "contact": "<b>Contact</b>",
                 "language": "Language",
@@ -360,7 +360,7 @@
                 "d": "Comunicatrice visiva<br> specializzata in Media Interacton<br> design.",
                 "avviso_text-blu": "Presto seguiranno novità sul mio progetto di tesi!",
                 "about_header": "Chi sono",
-                "about_text": "Sono sempre stata affascinata dal mondo della comunicazione e dalla sua evoluzione tra i diversi media disponibili, soprattutto quelli digitali. <br><br>Il mio prossimo obiettivo è quello di conseguire un master in creazione di videogiochi. <br><br>Ho terminato la formazione come <b>interactive media designer presso lo CSIA</b>, e poi ho proseguito la mia formazione frequentando <b> un Bachelor in comunicazione visiva presso l'Università SUPSI </b> (a Mendrisio, in Svizzera).<br><br>Ho lavorato come collaboratrice presso la pixel-plus.",
+                "about_text": "Sono profondamente affascinata dall'evoluzione dinamica della comunicazione attraverso i vari media, in particolare nell'ambito delle piattaforme digitali. Il mio percorso è iniziato con una formazione come Interactive Media Designer presso lo CSIA, seguita da un Bachelor in Comunicazione Visiva presso l'Università SUPSI di Mendrisio, Svizzera.<br> <br> Spinta dalla passione per l'innovazione e la creatività, mi impegno a esplorare l'intersezione tra design e tecnologia. La mia carriera è stata arricchita da esperienze pratiche, tra cui la collaborazione con pixel-plus, dove ho contribuito a diversi progetti che richiedevano competenze tecniche di UX/UI. <br> <br> La mia prossima aspirazione è quella di conseguire un Master specializzato nella creazione di videogiochi, con l'obiettivo di approfondire ulteriormente la mia comprensione dei media interattivi e delle esperienze narrative.",
                 "projects_header": "<a href='Projects.html'>Projects</a>",
                 "contact": "<b>Contatto<b>",
                 "language": "Lingua",
