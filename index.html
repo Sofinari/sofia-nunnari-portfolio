@@ -28,101 +28,27 @@
 
 
     <style>
-        .article {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 20px;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-            padding: 2%;
-            margin-bottom: 6%;
-        }
-
-        @media (min-width: 320px) {
-            .article {
-                border-radius: 22px;
-                padding: 4%;
-            }
-        }
-
-
-        @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-
-        body {
-            color: #000;
-            font-family: "Roboto", sans-serif;
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 1.6;
-        }
-
-        .container {
-            width: 100%;
-            margin: 2rem auto;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-            /* padding: 20px; */
-        }
-
-        .gallery__item {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .gallery__item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .gallery__img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .titlecategory,
-        .date,
-        .lm {
-            padding: 10px;
-            /* text-align: left; */
-            float: initial;
-        }
-
-        .grid-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .grid-section .text {
-            grid-column: span 2;
-        }
-
-
-
-
-        /* @media (min-width: 768px) and (max-width: 1024px) {
-            footer {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        } */
-
-        /* @media (min-width: 1025px) {
-            footer {
+        @media (min-width: 2695px) {
+            .gallery {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
                 gap: 20px;
-                width: inherit;
             }
-        } */
+
+            .griglia {
+                display: grid;
+                /* grid-template-columns: repeat(auto-fill, minmax(1200px, -1fr)); */
+                gap: 20px;
+            }
+
+            .griglia h2 {
+                grid-column: span 1;
+            }
+
+            .griglia .text {
+                grid-column: span 2;
+            }
+        }
     </style>
 
 </head>

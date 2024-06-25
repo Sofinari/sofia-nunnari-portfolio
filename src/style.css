@@ -1,3 +1,69 @@
+.article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 2%;
+    margin-bottom: 6%;
+}
+
+@media (min-width: 320px) {
+    .article {
+        border-radius: 22px;
+        padding: 4%;
+    }
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    /* padding: 20px; */
+}
+
+.gallery__item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gallery__img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.titlecategory,
+.date,
+.lm {
+    padding: 10px;
+    /* text-align: left; */
+    float: initial;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.grid-section .text {
+    grid-column: span 2;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 /* inizio CSS generale */
@@ -8,6 +74,19 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none
+}
+
+body {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    margin: 2rem auto;
 }
 
 .gallery__item {
@@ -90,11 +169,33 @@
     width: 100%;
 }
 
+@media (min-width: 2560px) {
+    .title {
+        color: #0E0E0E;
+        font-family: 'Lexend';
+        font-size: 72pt;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 76pt;
+        letter-spacing: -1.314px;
+        width: auto;
+        margin-bottom: 2%;
+    }
+}
+
 @media (min-width: 320px) {
     .griglia {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
         gap: 20px;
+    }
+
+    .griglia h2 {
+        grid-column: span 2;
+    }
+
+    .griglia .text {
+        grid-column: span 2;
     }
 
     .title {
@@ -156,6 +257,14 @@
         grid-column: span 1;
         width: 100%;
     }
+
+    .griglia h2 {
+        grid-column: span 1;
+    }
+
+    .griglia .text {
+        grid-column: span 2;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -165,11 +274,43 @@
         gap: 20px;
         /* padding: 20px; */
     }
+
     .griglia .text {
         grid-column: span 2;
     }
+
     .title {
-        grid-column: span 6;
+        grid-column: span 3;
+    }
+
+    .desc {
+        grid-column: span 1;
+    }
+
+    .didascalia {
+        grid-column: span 1;
+    }
+
+    #my-photo {
+        grid-column: span 1;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .griglia {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        /* padding: 20px; */
+    }
+
+    .griglia .text {
+        grid-column: span 2;
+    }
+
+    .title {
+        grid-column: span 4;
     }
 
     .desc {
@@ -888,7 +1029,7 @@ li {
         font-weight: 500;
         line-height: 17px;
         float: right;
-        margin-top: 10%;
+        margin: 0;
         /* 114.286% */
     }
 
@@ -1182,14 +1323,14 @@ li {
     }
 
     .didascalia {
-        width: 20%;
-        /* margin-top: 10%; */
+        width: fit-content;
         color: #0E0E0E;
         font-family: 'JetBrains Mono', monospace;
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
         line-height: 20px;
+        margin: 0;
     }
 
     .desc {
@@ -1199,9 +1340,7 @@ li {
         font-style: normal;
         font-weight: 500;
         line-height: 22px;
-        /* float: revert-layer; */
-        margin-top: 10%;
-        padding-right: 35%;
+        margin: 0;
     }
 
     .gif {
@@ -1429,11 +1568,17 @@ li {
     .didascalia {
         font-size: 20pt;
         line-height: 26pt;
+        padding: 0;
+        margin: 0;
+        width: fit-content;
     }
 
     .desc {
-        font-size: 28pt;
-        line-height: 38pt;
+        font-size: 24pt;
+        line-height: 28pt;
+        padding: 0;
+        margin: 0;
+        width: fit-content;
     }
 
     #avviso-blu>p {
@@ -1447,7 +1592,7 @@ li {
     }
 
     .titlecategory {
-        font-size: 28pt;
+        font-size: 22pt;
     }
 
     .accordion {
