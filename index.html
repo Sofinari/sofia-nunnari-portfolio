@@ -35,12 +35,14 @@
             overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
             padding: 2%;
+            margin-bottom: 6%;
         }
+
         @media (min-width: 320px) {
             .article {
-            border-radius: 22px;
-            padding: 4%;
-        }
+                border-radius: 22px;
+                padding: 4%;
+            }
         }
 
 
@@ -93,6 +95,37 @@
             /* text-align: left; */
             float: initial;
         }
+
+        .grid-section .text {
+            grid-column: span 2;
+        }
+
+        @media (min-width: 425px) {
+            .display {
+                display: none;
+            }
+
+
+        }
+
+        @media (min-width: 1020px) {
+            .display {
+                display: grid;
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            footer {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (min-width: 1025px) {
+            footer {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
     </style>
 
 </head>
@@ -100,7 +133,8 @@
 <body>
     <nav class="grid-nav">
         <h5><a title="homepage" href="index.html" onclick="showPage('homepage')">Sofia Nunnari</a></h5>
-        <div style="width: 100%;"></div>
+        <div class="display"></div>
+        <div class="display"></div>
         <div class="menu">
             <div id="portfolio-text"><a href="index.html" class="menu-text active"
                     style="float: inline-start; padding: 0;">Portfolio</a>
@@ -127,23 +161,32 @@
             <p id="avviso_text-blu">News about my thesis project will follow soon!</p>
         </div>
         <div>
-            <a href="https://www.linkedin.com/pulse/virtual-reality-innovation-sofia-nunnari-hetaf/">
-                <section class="box-w">
-                    <div class="wt">
-                        <p class="titlecategory" style="padding: 0; text-align: left; float: none;">Linkedin articles
-                        </p>
-                    </div>
-                    <div class="article">
+            <section class="box-w grid-section">
+                <div class="wt">
+                    <p class="titlecategory" style="padding: 0; text-align: left; float: none;">Linkedin articles
+                    </p>
+                </div>
+                <div class="article">
+                    <a href="https://www.linkedin.com/pulse/virtual-reality-innovation-sofia-nunnari-hetaf/">
                         <img class="preview" alt="" src="src/IMG/VR.png">
                         <div class="date">2024 01/06</div>
-                        <p style="font-family: 'Lexend'; text-align: left;"><br><b>Virtual reality, a futuristic
+                        <p style="font-family: 'Lexend'; text-align: left;">English<br><br><b>Virtual reality, a futuristic
                                 innovation.</b> <br> In my
                             article I share some of my thoughts on this increasingly emerging and innovative technology,
                             which by the way I will be using for my thesis project.</p>
                         <div class="lm" id="lm">Learn more -></div>
-                    </div>
-                </section>
-            </a>
+                    </a>
+                </div>
+                <div class="article">
+                    <a href="https://www.linkedin.com/pulse/la-realtà-virtuale-uninnovazione-sofia-nunnari-bq17f/">
+                        <img class="preview" alt="" src="src/IMG/VR.png">
+                        <div class="date">2024 01/06</div>
+                        <p style="font-family: 'Lexend'; text-align: left;">Italiano<br><br><b>La realtà virtuale, un'innovazione innovazione.</b> <br> In my
+                            Condivido con voi alcuni dei miei pensieri su questa tecnologia sempre più emergente e innovativa, che, tra l'altro, utilizzerò per il mio progetto di tesi.</p>
+                        <div class="lm" id="lm">Learn more -></div>
+                    </a>
+                </div>
+            </section>
         </div>
     </section>
 
