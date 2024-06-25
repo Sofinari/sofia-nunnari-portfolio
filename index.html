@@ -64,7 +64,7 @@
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 20px;
             /* padding: 20px; */
         }
@@ -96,36 +96,33 @@
             float: initial;
         }
 
+        .grid-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
         .grid-section .text {
             grid-column: span 2;
         }
 
-        @media (min-width: 425px) {
-            .display {
-                display: none;
+
+
+
+        /* @media (min-width: 768px) and (max-width: 1024px) {
+            footer {
+                grid-template-columns: repeat(4, 1fr);
             }
+        } */
 
-
-        }
-
-        @media (min-width: 1020px) {
-            .display {
+        /* @media (min-width: 1025px) {
+            footer {
                 display: grid;
-                width: 100%;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 20px;
+                width: inherit;
             }
-        }
-
-        @media (min-width: 768px) and (max-width: 1024px) {
-            footer {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-
-        @media (min-width: 1025px) {
-            footer {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
+        } */
     </style>
 
 </head>
@@ -145,15 +142,17 @@
         </div>
 
     </nav>
-    <section id="container">
-        <div>
+    <section id="container" style="width: -webkit-fill-available;">
+        <div class="griglia">
             <h1 class="title" id="CV">Visual Communication</h1>
             <div class="desc">
                 <p id="d">Visual communicator<br> specializing in Media Interacton<br> design.</p>
             </div>
             <p class="didascalia" id="dove">Based in Ticino - Swiss<br></p>
-            <p class="didascalia" id="year" style="margin-top:2%">year</p>
-            <p class="didascalia" id="clock" style="margin-top:0">10:21 PM</p>
+            <div class="didascalia">
+                <p class="didascalia" id="year" style="margin-top:2%">year</p>
+                <p class="didascalia" id="clock" style="margin-top:0">10:21 PM</p>
+            </div>
             <img id="my-photo" src="src/IMG/my-photo.png">
         </div>
         <!-- <div class="gif"></div> -->
@@ -161,7 +160,7 @@
             <p id="avviso_text-blu">News about my thesis project will follow soon!</p>
         </div>
         <div>
-            <section class="box-w grid-section">
+            <section class="box-w grid-section ">
                 <div class="wt">
                     <p class="titlecategory" style="padding: 0; text-align: left; float: none;">Linkedin articles
                     </p>
@@ -170,7 +169,8 @@
                     <a href="https://www.linkedin.com/pulse/virtual-reality-innovation-sofia-nunnari-hetaf/">
                         <img class="preview" alt="" src="src/IMG/VR.png">
                         <div class="date">2024 01/06</div>
-                        <p style="font-family: 'Lexend'; text-align: left;">English<br><br><b>Virtual reality, a futuristic
+                        <p style="font-family: 'Lexend'; text-align: left;">English<br><br><b>Virtual reality, a
+                                futuristic
                                 innovation.</b> <br> In my
                             article I share some of my thoughts on this increasingly emerging and innovative technology,
                             which by the way I will be using for my thesis project.</p>
@@ -181,8 +181,10 @@
                     <a href="https://www.linkedin.com/pulse/la-realtà-virtuale-uninnovazione-sofia-nunnari-bq17f/">
                         <img class="preview" alt="" src="src/IMG/VR.png">
                         <div class="date">2024 01/06</div>
-                        <p style="font-family: 'Lexend'; text-align: left;">Italiano<br><br><b>La realtà virtuale, un'innovazione innovazione.</b> <br> In my
-                            Condivido con voi alcuni dei miei pensieri su questa tecnologia sempre più emergente e innovativa, che, tra l'altro, utilizzerò per il mio progetto di tesi.</p>
+                        <p style="font-family: 'Lexend'; text-align: left;">Italiano<br><br><b>La realtà virtuale,
+                                un'innovazione innovazione.</b> <br> In my
+                            Condivido con voi alcuni dei miei pensieri su questa tecnologia sempre più emergente e
+                            innovativa, che, tra l'altro, utilizzerò per il mio progetto di tesi.</p>
                         <div class="lm" id="lm">Learn more -></div>
                     </a>
                 </div>
@@ -191,7 +193,7 @@
     </section>
 
 
-    <section class="grid-section">
+    <section class="griglia">
         <h2 id="about_header">About me</h2>
         <p class="text" id="about_text">
             I am deeply fascinated by the dynamic evolution of communication through various media, particularly in the
@@ -262,11 +264,13 @@
             <li><a title="linkedin" href="http://linkedin.com/in/sofia-nunnari-636b66199">LinkedIn</a>
             </li>
         </ul>
+        <ul class="display"></ul>
         <ul style="float: left;">
             <li id="contact"><b id="contact">Contact</b></li>
             <li><a title="Email" href="mailto:naris.design@outlook.com">Email</a></li>
 
         </ul>
+
         <ul style="float: left; padding: 0;">
             <li><b id="language">Language</b></li>
             <a href="#">

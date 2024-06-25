@@ -66,6 +66,151 @@
     opacity: 1;
 }
 
+.griglia {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    /* padding: 20px; */
+}
+
+.title {
+    grid-column: span 5;
+}
+
+.desc {
+    grid-column: span 1;
+}
+
+.didascalia {
+    grid-column: span 1;
+}
+
+#my-photo {
+    grid-column: span 1;
+    width: 100%;
+}
+
+@media (min-width: 320px) {
+    .griglia {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 20px;
+    }
+
+    .title {
+        grid-column: span 2;
+    }
+
+    .desc {
+        grid-column: span 2;
+    }
+
+    .didascalia {
+        grid-column: span 1;
+        margin: 0;
+    }
+
+    p .didascalia {
+        margin: 0px;
+    }
+
+    #my-photo {
+        grid-column: span 2;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 425px) {
+    .griglia {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        gap: 20px;
+    }
+
+    .title {
+        grid-column: span 2;
+    }
+
+    .desc {
+        grid-column: span 2;
+    }
+
+    .didascalia {
+        grid-column: span 1;
+        margin: 0;
+    }
+
+    p .didascalia {
+        margin: 0px;
+    }
+
+    #my-photo {
+        grid-column: span 2;
+        width: 100%;
+    }
+}
+
+@media (min-width: 760px) {
+    #my-photo {
+        grid-column: span 1;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .griglia {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        /* padding: 20px; */
+    }
+    .griglia .text {
+        grid-column: span 2;
+    }
+    .title {
+        grid-column: span 6;
+    }
+
+    .desc {
+        grid-column: span 1;
+    }
+
+    .didascalia {
+        grid-column: span 1;
+    }
+
+    #my-photo {
+        grid-column: span 1;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1795px) {
+    .griglia {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 20px;
+        /* padding: 20px; */
+    }
+
+    .title {
+        grid-column: span 6;
+    }
+
+    .desc {
+        grid-column: span 1;
+    }
+
+    .didascalia {
+        grid-column: span 1;
+    }
+
+    #my-photo {
+        grid-column: span 1;
+        width: 100%;
+    }
+}
 
 
 .box1 {
@@ -80,12 +225,33 @@
     margin: 2% 0%;
 }
 
+@media (min-width: 320px) {
+    .display {
+        display: none;
+    }
+}
+
+@media (min-width: 425px) {
+    .display {
+        display: none;
+    }
+
+    @media (min-width: 1020px) {
+        .display {
+            display: grid;
+            width: 100%;
+        }
+    }
+
+}
+
 footer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    width: -webkit-fill-available;
-    height: 102px;
+    width: inherit;
+    /* width: -webkit-fill-available; */
+    height: auto;
     border-top: #0E0E0E solid 1px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 14px;
@@ -376,12 +542,12 @@ li {
 
     }
 
-    #my-photo {
+    /* #my-photo {
         width: 80%;
         float: right;
         z-index: 2;
         margin: 0% 10% 0% 0%;
-    }
+    } */
 
     h5 {
         color: var(--Text, #0E0E0E);
@@ -408,7 +574,7 @@ li {
 
     .didascalia {
         width: 103px;
-        margin-top: 10%;
+        /* margin-top: 10%; */
 
         color: #0E0E0E;
         font-family: 'JetBrains Mono', monospace;
@@ -560,11 +726,9 @@ li {
 
     footer {
         width: -webkit-fill-available;
-        height: 102px;
-        border-top: #0E0E0E solid 1px;
-        font-family: 'JetBrains Mono', monospace;
         font-size: 14px;
         margin: 5% 0 5% 0;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     ul {
@@ -626,9 +790,9 @@ li {
         padding: 5px 0px;
     }
 
-    #avviso-blu {
+    /* #avviso-blu {
         margin: 95% 0% 0% 0%;
-    }
+    } */
 
     .copyright {
         font-size: 7pt;
@@ -666,12 +830,12 @@ li {
 
     }
 
-    #my-photo {
+    /* #my-photo {
         width: 75%;
         float: none;
         z-index: 2;
         margin: 0% 0% 0% 10%;
-    }
+    } */
 
     h5 {
         color: var(--Text, #0E0E0E);
@@ -701,7 +865,7 @@ li {
 
     .didascalia {
         width: 103px;
-        margin-top: 10%;
+        /* margin-top: 10%; */
 
         color: #0E0E0E;
         font-family: 'JetBrains Mono', monospace;
@@ -808,7 +972,7 @@ li {
 
     .titlecategory {
         color: #0E0E0E;
-        text-align: right;
+        /* text-align: right; */
         font-family: 'Lexend';
         font-size: 24px;
         font-style: normal;
@@ -820,8 +984,8 @@ li {
     }
 
     .preview {
-        width: 390px;
-        height: 390px;
+        /* width: 390px;
+        height: 390px; */
         flex-shrink: 0;
         border-radius: 20px;
         background: #BFBFBF;
@@ -865,12 +1029,7 @@ li {
     }
 
     footer {
-        width: 100%;
-        height: 102px;
-        border-top: #0E0E0E solid 1px;
-        font-family: 'JetBrains Mono', monospace;
         font-size: 14px;
-        margin: 5% 0 5% 0;
     }
 
     #avviso-blu {
@@ -903,12 +1062,12 @@ li {
         margin: 10% 0% 5% 0%;
     }
 
-    #my-photo {
+    /* #my-photo {
         width: 50%;
         float: none;
         z-index: 2;
         margin: 0 25%;
-    }
+    } */
 
     .accordion {
         margin: 0% 0 -8% 0;
@@ -987,12 +1146,12 @@ li {
 
     }
 
-    #my-photo {
+    /* #my-photo {
         width: 20%;
         float: right;
         z-index: 2;
         margin: -15% 1%
-    }
+    } */
 
     h5 {
         color: var(--Text, #0E0E0E);
@@ -1024,7 +1183,7 @@ li {
 
     .didascalia {
         width: 20%;
-        margin-top: 10%;
+        /* margin-top: 10%; */
         color: #0E0E0E;
         font-family: 'JetBrains Mono', monospace;
         font-size: 18px;
@@ -1192,12 +1351,10 @@ li {
     }
 
     footer {
-        width: -webkit-fill-available;
-        height: 102px;
-        border-top: #0E0E0E solid 1px;
-        font-family: 'JetBrains Mono', monospace;
+        /* width: -webkit-fill-available; */
         font-size: 14px;
         margin: auto;
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .tl {
@@ -1254,12 +1411,12 @@ li {
         margin: 10% 0% 5% 0%;
     }
 
-    #my-photo {
+    /* #my-photo {
         width: 20%;
         float: right;
         z-index: 2;
         margin: -12% 2%;
-    }
+    } */
 
     h5 {
         font-size: 24pt;
