@@ -140,6 +140,9 @@
                 }
             });
 
+            // Cambia l'attributo lang del tag html
+            document.documentElement.lang = lingua === 'italian' ? 'it' : 'en';
+
             // Scorri verso l'alto della pagina
             window.scrollTo(0, 0);
         }

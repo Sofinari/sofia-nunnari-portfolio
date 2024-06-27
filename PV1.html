@@ -46,7 +46,10 @@
                 </h2>
             </div>
             <div>
-                <p class="textD" id="description" style="padding: 0;">During my internship in Zurich, I captured the beauty of the urban landscape in black and white. The photos reflect the elegance of the city, highlighting the iconic architecture and unique atmospheres, thus honing my photography skills.<br> &#40;7 months&#41;.
+                <p class="textD" id="description" style="padding: 0;">During my internship in Zurich, I captured the
+                    beauty of the urban landscape in black and white. The photos reflect the elegance of the city,
+                    highlighting the iconic architecture and unique atmospheres, thus honing my photography skills.<br>
+                    &#40;7 months&#41;.
                 </p>
             </div>
         </section>
@@ -135,6 +138,9 @@
                         }
                     }
                 });
+
+                // Cambia l'attributo lang del tag html
+                document.documentElement.lang = lingua === 'italian' ? 'it' : 'en';
 
                 // Scorri verso l'alto della pagina
                 window.scrollTo(0, 0);
