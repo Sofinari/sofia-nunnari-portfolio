@@ -14,7 +14,13 @@
         padding: 4%;
     }
 }
-
+a {
+    text-decoration: none;
+    color: #0E0E0E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
@@ -33,6 +39,11 @@
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
+
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .gallery__item:hover {
@@ -79,7 +90,7 @@
 body {
     color: #000;
     font-family: "Roboto", sans-serif;
-    font-size: 18px;
+    font-size: 14pt;
     font-weight: 400;
     line-height: 1.6;
 }
@@ -108,6 +119,7 @@ body {
     background-color: #e6e6e6;
     border: none;
     cursor: pointer;
+    font-size: 14pt;
     transition: background-color 0.3s;
 }
 
@@ -310,7 +322,7 @@ body {
     }
 
     .title {
-        grid-column: span 4;
+        grid-column: span 5;
     }
 
     .desc {
@@ -637,10 +649,10 @@ li {
     width: 100%;
     color: #0E0E0E;
     font-family: 'Lexend';
-    font-size: 21pt;
+    font-size: 14pt;
+    line-height: 1.6;
     font-style: normal;
     font-weight: 400;
-    line-height: 24pt;
     padding: 7% 40% 0 15%;
     float: left;
 }
@@ -758,10 +770,9 @@ li {
         width: 100%;
         margin-bottom: 10%;
         float: left;
-
         color: #0E0E0E;
         font-family: 'Lexend';
-        font-size: 36px;
+        font-size: 26.75pt;
         font-style: normal;
         font-weight: 600;
         line-height: 58px;
@@ -770,13 +781,12 @@ li {
 
     .text {
         width: 100%;
-
         color: #0E0E0E;
         font-family: 'Lexend';
-        font-size: 18px;
+        font-size: 14pt;
+        line-height: 1.6;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;
         /* 133.333% */
     }
 
@@ -820,15 +830,14 @@ li {
 
     .titlecategory {
         color: #0E0E0E;
-        text-align: left;
+        /* text-align: right; */
         font-family: 'Lexend';
-        font-size: 24px;
+        font-size: 20.75pt;
         font-style: normal;
         font-weight: 500;
-        line-height: 28px;
-        /* 116.667% */
+        line-height: 1.6;
         float: left;
-        margin-bottom: 5%;
+        margin-bottom: 0;
     }
 
     .preview {
@@ -844,10 +853,9 @@ li {
         font-family: "JetBrains Mono", monospace;
         font-optical-sizing: auto;
         ;
-        font-size: 14px;
+        font-size: 10.5pt;
         font-style: normal;
         font-weight: 500;
-        line-height: 28px;
         /* 200% */
         float: left;
     }
@@ -878,8 +886,8 @@ li {
 
 
     .textD {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 14pt;
+        line-height: 1.6;
         padding: 7% 40% 0 15%;
     }
 
@@ -936,7 +944,8 @@ li {
     } */
 
     .copyright {
-        font-size: 7pt;
+        font-size: 8pt;
+        text-align: justify;
     }
 
     /* #GalleryPhoto {
@@ -1024,7 +1033,7 @@ li {
     .desc {
         color: #0E0E0E;
         font-family: 'Lexend';
-        font-size: 14px;
+        font-size: 14pt;
         font-style: normal;
         font-weight: 500;
         line-height: 17px;
@@ -1057,10 +1066,10 @@ li {
         float: left;
         color: #0E0E0E;
         font-family: 'Lexend';
-        font-size: 36px;
+        font-size: 26.75pt;
         font-style: normal;
         font-weight: 600;
-        line-height: 58px;
+        line-height: 1.6;
         /* padding-left: 5%; */
     }
 
@@ -1068,10 +1077,10 @@ li {
         width: 100%;
         color: #0E0E0E;
         font-family: 'Lexend';
-        font-size: 18px;
+        font-size: 14pt;
+        line-height: 1.6;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;
         /* padding: 0 5%; */
     }
 
@@ -1115,13 +1124,12 @@ li {
         color: #0E0E0E;
         /* text-align: right; */
         font-family: 'Lexend';
-        font-size: 24px;
+        font-size: 20.75pt;
         font-style: normal;
         font-weight: 500;
-        line-height: 28px;
-        /* 116.667% */
+        line-height: 1.6;
         float: left;
-        margin-bottom: 5%;
+        margin-bottom: 0;
     }
 
     .preview {
@@ -1135,11 +1143,9 @@ li {
     .date {
         color: #0E0E0E;
         font-family: 'JetBrains Mono', monospace;
-        ;
-        font-size: 14px;
+        font-size: 10.5pt;
         font-style: normal;
         font-weight: 500;
-        line-height: 28px;
         /* 200% */
         float: left;
     }
@@ -1267,6 +1273,11 @@ li {
     a {
         text-decoration: none;
         color: #0E0E0E;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: inherit;
+        color: inherit;
     }
 
 
@@ -1363,10 +1374,10 @@ li {
         float: left;
         color: #0E0E0E;
         font-family: 'Lexend';
-        font-size: 36pt;
+        font-size: 26.75pt;
         font-style: normal;
         font-weight: 600;
-        line-height: 58px;
+        line-height: 1.6;
         margin-bottom: 0;
         padding: 0;
     }
@@ -1374,10 +1385,10 @@ li {
     .text {
         color: #0E0E0E;
         font-family: 'Lexend';
-        font-size: 20pt;
+        font-size: 14pt;
+        line-height: 1.6;
         font-style: normal;
         font-weight: 400;
-        line-height: 29pt;
         text-align: left;
         /* text-justify: distribute; */
         /* padding: 7% 21.5% 0 15%; */
@@ -1385,8 +1396,8 @@ li {
 
     .textD {
         /* width: auto; */
-        font-size: 21pt;
-        line-height: 24pt;
+        font-size: 14pt;
+        line-height: 1.6;
         padding: 7% 40% 0 15%;
     }
 
@@ -1468,11 +1479,9 @@ li {
     .date {
         color: #0E0E0E;
         font-family: 'JetBrains Mono', monospace;
-        ;
-        font-size: 14px;
+        font-size: 10.5pt;
         font-style: normal;
         font-weight: 500;
-        line-height: 28px;
         /* 200% */
         float: left;
     }
