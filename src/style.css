@@ -14,6 +14,7 @@
         padding: 4%;
     }
 }
+
 a {
     text-decoration: none;
     color: #0E0E0E;
@@ -579,10 +580,10 @@ li {
 .link2 {
     text-decoration-line: underline;
     font-family: 'Lexend';
-    font-size: 28px;
+    font-size: 21pt;
     font-style: normal;
     font-weight: 400;
-    line-height: 34px;
+    /* line-height: 34px; */
     text-decoration-line: underline;
 }
 
@@ -903,7 +904,12 @@ li {
     }
 
     .tl {
-        margin: 4% 0;
+        margin: 10% 0;
+    }
+
+    .arrow-oblique {
+        width: 21pt;
+        margin: -12% 0% 0% 50%;
     }
 
     .menu {
@@ -1024,6 +1030,10 @@ li {
         /* font-weight: 700; */
         line-height: 16px;
         /* 114.286% */
+    }
+
+    .arrow-oblique {
+        margin: -8% 0% 0% 40%;
     }
 
     #pr {
@@ -1203,10 +1213,20 @@ li {
         font-size: 10pt;
     }
 }
+@media (min-width: 550px) {
+
+    .arrow-oblique {
+        margin: -8% 0% 0% 30%;
+    }
+}
 
 @media (min-width: 760px) {
     #avviso-blu {
         margin: 10% 0% 5% 0%;
+    }
+
+    .arrow-oblique {
+        margin: -5.5% 0% 0% 20%;
     }
 
     /* #my-photo {
@@ -1219,6 +1239,14 @@ li {
     .accordion {
         margin: 0% 0 -8% 0;
         padding: 6% 0%;
+    }
+}
+
+
+@media (min-width: 900px) {
+
+    .arrow-oblique {
+        margin: -4% 0% 0% 17%;
     }
 }
 
@@ -1296,6 +1324,10 @@ li {
         height: 20px;
         float: right;
 
+    }
+
+    .arrow-oblique {
+        margin: -8% 0% 0% 35%;
     }
 
     /* #my-photo {
@@ -1506,7 +1538,7 @@ li {
     }
 
     .tl {
-
+        margin-right: 10%;
         margin-bottom: 5%;
         width: 25%;
         float: left;
@@ -1551,6 +1583,10 @@ li {
     .accordion {
         margin: -2% 0 -3% 0;
         padding: 3% 0%;
+    }
+
+    .arrow-oblique {
+        margin: -5% 0% 0% 25%;
     }
 }
 
@@ -1628,5 +1664,18 @@ li {
 
     footer {
         font-size: 14pt;
+    }
+}
+
+@media (min-width: 2560px) {
+
+    .arrow-oblique {
+        margin: -3% 0% 0% 15%;
+    }
+
+    .tl {
+        margin-bottom: 0%;
+        float: left;
+        margin: 2% 0px;
     }
 }
